@@ -1,0 +1,185 @@
+{% extends "shop/base.html" %}
+{% load static %}
+
+{% block title %}
+    {% if category %}
+        {{ category.name }}
+    {% else %}
+        Products
+    {% endif %}
+{% endblock title %}
+
+<!-- Breadcrumb Section Begin -->
+{% block breadcrumb %}
+    {% if category %}
+        {{ category.name }}
+    {% else %}
+        Products
+    {% endif %}
+{% endblock breadcrumb %}
+<!-- Breadcrumb Section End -->
+
+{% block content %}
+    <!-- Product Section Begin -->
+    <section class="product spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-5">
+                    <div class="sidebar">
+                        <div class="sidebar__item">
+                            <h4>Categories</h4>
+                            <ul>
+                                <li>
+                                    <a href="{% url "shop:product_list" %}">All</a>
+                                </li>
+                                {% for c in categories %}
+                                    <li>
+                                        <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="sidebar__item">
+                            <h4>Price</h4>
+                            <div class="price-range-wrap">
+                                <div class="price-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"
+                                     data-min="10"
+                                     data-max="540">
+                                    <div class="ui-slider-range ui-corner-all ui-widget-header"></div>
+                                    <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
+                                    <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
+                                </div>
+                                <div class="range-slider">
+                                    <div class="price-input">
+                                        <input type="text" id="minamount">
+                                        <input type="text" id="maxamount">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar__item">
+                            <div class="latest-product__text">
+                                <h4>Latest Products</h4>
+                                <div class="latest-product__slider owl-carousel">
+                                    {% for product in products %}
+                                        <div class="latest-prdouct__slider__item">
+ 
+                                            <a href="{{ product.get_absolute_url }}" class="latest-product__item">
+                                                <div class="latest-product__item__pic">
+                                                    <img src="{% if product.image %}{{ product.image.url }}{% else %}{% static "img/no_image.png" %}{% endif %}" alt="">
+                                                </div>
+                                                <div class="latest-product__item__text">
+                                                    <h6>{{ product.name }}</h6>
+                                                    <span>{{ product.price }}</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-7">
+                    {% if not category %}
+                        <div class="product__discount">
+                            <div class="section-title product__discount__title">
+                                <h2>Sale Off</h2>
+                            </div>
+                            <div class="row">
+                                <div class="product__discount__slider owl-carousel">
+                                    {% for i in featured_num_range %}
+                                        <div class="col-lg-4">
+                                            <div class="product__discount__item">
+                                                <div class="product__discount__item__pic set-bg" data-setbg="{% static "img/no_image.png" %}">
+                                                    <div class="product__discount__percent">-20%</div>
+                                                    <ul class="product__item__pic__hover">
+                                                        <li>
+                                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><i class="fa fa-retweet"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product__discount__item__text">
+                                                    <span>Dried Fruit</span>
+                                                    <h5>
+                                                        <a href="#">Raisin’n’nuts</a>
+                                                    </h5>
+                                                    <div class="product__item__price">
+                                                        $30.00 <span>$36.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                    <div class="filter__item">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-5">
+                                <div class="filter__sort">
+                                    <span>Sort By</span>
+                                    <select>
+                                        <option value="0">All</option>
+                                        <option value="1">Bought Frequently</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="filter__found">
+                                    <h6>
+                                        <span>{{ all_available_products_count }}</span> Products found
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-3">
+                                <div class="filter__option">
+                                    <span class="icon_grid-2x2"></span>
+                                    <span class="icon_ul"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {% for product in products %}
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="{% if product.image %}{{ product.image.url }}{% else %}{% static "img/no_image.png" %}{% endif %}">
+                                        <ul class="product__item__pic__hover">
+                                            <li>
+                                                <a href="#"><i class="fa fa-heart"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-retweet"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h6>
+                                            <a href="{{ product.get_absolute_url }}">{{ product.name }}</a>
+                                        </h6>
+                                        <h5>${{ product.price }}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    {% if all_available_products_count > 9 %}
+                        {% include "shop/pagination.html" with page=products %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Section End -->
+{% endblock content %}
