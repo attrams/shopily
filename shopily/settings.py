@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # custom apps
     'shop.apps.ShopConfig',
+    'cart.apps.CartConfig',
 
     # installed apps
     'easy_thumbnails',
@@ -69,7 +70,9 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 # this allows categories to be available in all templates
-                'shop.context_processors.categories'
+                'shop.context_processors.categories',
+                # this allows cart to be available in all templates
+                'cart.context_processors.cart'
             ],
         },
     },
@@ -133,3 +136,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # media configuration
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+# cart configuration
+CART_SESSION_ID = 'cart'

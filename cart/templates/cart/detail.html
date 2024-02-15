@@ -1,0 +1,104 @@
+{% extends "shop/base.html" %}
+{% load static %}
+{% load thumbnail %}
+
+{% block title %}
+    Your shopping cart
+{% endblock title %}
+
+{% block breadcrumb %}
+    shopping cart
+{% endblock breadcrumb %}
+
+{% block content %}
+    <!-- Shoping Cart Section Begin -->
+    <section class="shoping-cart spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="shoping__cart__table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="shoping__product">Products</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Total</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for item in cart %}
+                                    {% with product=item.product %}
+                                        <tr>
+                                            <td class="shoping__cart__item">
+                                                <img src="{% thumbnail product.image 60x60 crop %}" alt="">
+                                                <h5>{{ product.name }}</h5>
+                                            </td>
+                                            <td class="shoping__cart__price" id="product-price">${{ item.price }}</td>
+                                            <td class="shoping__cart__quantity">
+                                                <div class="quantity">
+                                                    <div class="pro-qty">
+                                                        <input type="text"
+                                                               value="{{ item.quantity }}"
+                                                               id="item-input-quantity-{{ product.id }}"
+                                                               class="quantity-input"
+                                                               min="1"
+                                                               max="20"
+                                                               data-product-id="{{ product.id }}"
+                                                               readonly>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="shoping__cart__total" id="item-total-price-{{ product.id }}">${{ item.total_price }}</td>
+                                            <td class="shoping__cart__item__close">
+                                                <form action="{% url "cart:cart_remove" product.id %}" method="post">
+                                                    <input type="submit" value="Remove" class="btn btn-danger">
+                                                    {% csrf_token %}
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    {% endwith %}
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="shoping__cart__btns">
+                        <a href="{% url "shop:product_list" %}"
+                           class="primary-btn cart-btn cart-btn-right">CONTINUE SHOPPING</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="shoping__continue">
+                        <div class="shoping__discount">
+                            <h5>Discount Codes</h5>
+                            <form action="#">
+                                <input type="text" placeholder="Enter your coupon code">
+                                <button type="submit" class="site-btn">APPLY COUPON</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="shoping__checkout">
+                        <h5>Cart Total</h5>
+                        <ul>
+                            <li>
+                                Subtotal <span id="cart-subtotal">${{ cart.get_total_price }}</span>
+                            </li>
+                            <li>
+                                Total <span id="cart-total">${{ cart.get_total_price }}</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="primary-btn">PROCEED TO CHECKOUT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Shoping Cart Section End -->
+{% endblock content %}
