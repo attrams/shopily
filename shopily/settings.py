@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # custom apps
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
+    'orders.apps.OrdersConfig',
 
     # installed apps
     'easy_thumbnails',
