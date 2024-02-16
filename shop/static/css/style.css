@@ -2149,7 +2149,7 @@ ol {
   border: 1px solid #ebebeb;
   padding-left: 20px;
   font-size: 16px;
-  color: #b2b2b2;
+  color: #000000;
   border-radius: 4px;
 }
 
@@ -2159,6 +2159,10 @@ ol {
 
 .checkout__input input::placeholder {
   color: #b2b2b2;
+}
+
+.checkout__input input:focus {
+  border-color: #7fad39;
 }
 
 .checkout__input__checkbox {
@@ -2292,6 +2296,16 @@ ol {
   letter-spacing: 2px;
   width: 100%;
   margin-top: 10px;
+}
+
+/* -------------------------
+    Order Completed
+  ----------------------------*/
+.card .card-body p a:hover,
+.card .card-body p a:focus {
+  text-decoration: none;
+  outline: none;
+  color: #7fad39;
 }
 
 /*---------------------

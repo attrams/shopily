@@ -73,4 +73,4 @@ def cart_remove(request, product_id):
 def cart_detail(request):
     cart = Cart(request)
 
-    return render(request=request, template_name='cart/detail.html', context={'cart': cart})
+    return render(request=request, template_name='cart/detail.html', context={'cart': cart, 'section': 'shop'})

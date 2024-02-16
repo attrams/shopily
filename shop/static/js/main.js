@@ -265,7 +265,9 @@ $(document).ready(function () {
       e.preventDefault();
 
       const csrftoken = Cookies.get('csrftoken');
-      var quantity = $('#quantity-input').val();
+      var quantity = $('#quantity-input').val()
+        ? $('#quantity-input').val()
+        : 1;
       var product_id = $(this).data('product-id');
       var override = false;
 
