@@ -11,9 +11,14 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+from dotenv import load_dotenv
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+# load environment variables.
+load_dotenv()
 
 
 # Quick-start development settings - unsuitable for production
@@ -143,3 +148,8 @@ CART_SESSION_ID = 'cart'
 
 # email configuration
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# stripe configuration
+STRIPE_PUBLISHABLE_KEY = os.getenv('STRIPE_PUBLISHABLE_KEY')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')
+STRIPE_API_VERSION = os.getenv('STRIPE_API_VERSION')
