@@ -50,6 +50,14 @@ def order_detail(obj):
     return mark_safe(f'<a href="{url}">View</a>')
 
 
+def order_pdf(obj):
+    url = reverse('orders:admin_order_pdf', args=[obj.id])
+    return mark_safe(f'<a href="{url}">PDF</a>')
+
+
+order_pdf.short_description = 'Invoice'
+
+
 def order_payment(obj):
     url = obj.get_stripe_url()
 
@@ -73,7 +81,8 @@ class OrderAdmin(admin.ModelAdmin):
     list_display = [
         'id', 'first_name', 'last_name', 'email',
         'address', 'postal_code', 'city', 'paid',
-        order_payment, 'created', 'updated', order_detail
+        order_payment, 'created', 'updated', order_detail,
+        order_pdf
     ]
     list_filter = ['paid', 'created', 'updated']
     inlines = [OrderItemInline]
