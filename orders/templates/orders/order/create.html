@@ -131,10 +131,15 @@
                                     {% endfor %}
                                 </ul>
                                 <div class="checkout__order__subtotal">
-                                    Subtotal <span>${{ cart.get_total_price }}</span>
+                                    Subtotal <span>${{ cart.get_total_price|floatformat:2 }}</span>
                                 </div>
+                                {% if cart.coupon %}
+                                    <div class="checkout__order__coupon">
+                                        Discount ({{ cart.coupon.discount }}% off) <span>- ${{ cart.get_discount|floatformat:2 }}</span>
+                                    </div>
+                                {% endif %}
                                 <div class="checkout__order__total">
-                                    Total <span>${{ cart.get_total_price }}</span>
+                                    Total <span>${{ cart.get_total_price_after_discount|floatformat:2 }}</span>
                                 </div>
                                 <div class="text-center">
                                     <input type="submit" value="PLACE ORDER" class="btn site-btn">

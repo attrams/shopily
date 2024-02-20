@@ -340,6 +340,9 @@ $(document).ready(function () {
               // update subtotal
               $('#cart-subtotal').text(`$${data['cartSubtotalPrice']}`);
 
+              // update discount
+              $('#cart-discount').text(`- $${data['cartDiscount']}`);
+
               // update total
               $('#cart-total').text(`$${data['cartTotalPrice']}`);
             }

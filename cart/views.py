@@ -8,6 +8,7 @@ import json
 from shop.models import Product
 from .cart import Cart
 from .forms import CartAddProductForm
+from coupons.forms import CouponApplyForm
 
 # Create your views here.
 
@@ -45,7 +46,9 @@ def cart_update(request, product_id):
         override_quantity=True
     )
 
-    cart_subtotal = cart.get_total_price()
+    cart_subtotal = round(cart.get_total_price(), 2)
+    cart_discount = round(cart.get_discount(), 2)
+    cart_total = round(cart.get_total_price_after_discount(), 2)
     updated_item_quantity = cart.cart.get(
         str(product_id), {}).get('quantity', 0)
     updated_item_total_price = quantity * Decimal(product.price)
@@ -53,7 +56,8 @@ def cart_update(request, product_id):
 
     return JsonResponse({
         'cartSubtotalPrice': str(cart_subtotal),
-        'cartTotalPrice': str(cart_subtotal),
+        'cartDiscount': str(cart_discount),
+        'cartTotalPrice': str(cart_total),
         'updatedItemQuantity': updated_item_quantity,
         'updatedItemTotalPrice': str(updated_item_total_price),
         'cartTotalItems': cart_total_items_count,
@@ -72,5 +76,6 @@ def cart_remove(request, product_id):
 
 def cart_detail(request):
     cart = Cart(request)
+    coupon_apply_form = CouponApplyForm()
 
-    return render(request=request, template_name='cart/detail.html', context={'cart': cart, 'section': 'shop'})
+    return render(request=request, template_name='cart/detail.html', context={'cart': cart, 'section': 'shop', 'coupon_apply_form': coupon_apply_form})

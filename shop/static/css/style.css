@@ -2277,6 +2277,21 @@ ol {
   padding-left: 20px;
 }
 
+.checkout__order .checkout__order__coupon {
+  font-size: 18px;
+  color: #1c1c1c;
+  font-weight: 700;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+}
+
+.checkout__order .checkout__order__coupon span {
+  float: right;
+  color: green;
+}
+
 .checkout__order .checkout__order__total {
   font-size: 18px;
   color: #1c1c1c;
