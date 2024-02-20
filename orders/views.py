@@ -41,6 +41,10 @@ def order_create(request):
             # clear cart
             cart.clear()
 
+            # Remove the coupon from the session after order creation
+            if 'coupon_id' in request.session:
+                del request.session['coupon_id']
+
             # send mail asynchronously
             order_created.delay(order.id)
 

@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
 from django.utils import timezone
 from django.views.decorators.http import require_POST
+from django.http import JsonResponse
+from django.urls import reverse
 
 from .models import Coupon
 from .forms import CouponApplyForm
@@ -28,4 +30,8 @@ def coupon_apply(request):
         except Coupon.DoesNotExist:
             request.session['coupon_id'] = None
 
-    return redirect('cart:cart_detail')
+    # handle POST request from ajax call
+    if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
+        return JsonResponse({'redirect': True, 'redirect_url': reverse('orders:order_create')})
+    else:
+        return redirect('cart:cart_detail')

@@ -233,29 +233,38 @@ $(document).ready(function () {
     /* ---------------------------
     Modal Apply button pressed
   ------------------------------ */
-    $('.modal-footer .btn-custom').click(function () {
+    $('.modal-footer .btn-apply').click(function () {
       // Get the value from the input field
       var couponCode = $('#modalInputContent').val();
 
-      // Perform an AJAX request (example using the POST method)
-      $.ajax({
-        url: '/apply-coupon/', // Your endpoint here
-        type: 'POST',
+      if (couponCode) {
+        const csrftoken = Cookies.get('csrftoken');
+        var url = '/coupons/apply/';
 
-        data: {
-          code: couponCode, // Make sure this matches what your endpoint expects
-        },
-        success: function (response) {
-          // Handle success. For example, you could display a success message.
-          console.log('Coupon applied successfully:', response);
-          // Optionally close the modal after applying the coupon
-          $('#modalCenter').modal('hide');
-        },
-        error: function (xhr, status, error) {
-          // Handle error. For example, display an error message.
-          console.error('Error applying coupon:', error);
-        },
-      });
+        var options = {
+          method: 'POST',
+          headers: {
+            'X-CSRFToken': csrftoken,
+            'X-Requested-With': 'XMLHttpRequest',
+          },
+          mode: 'same-origin',
+        };
+
+        var formData = new FormData();
+        formData.append('code', couponCode);
+        options['body'] = formData;
+
+        // send HTTP request
+        fetch(url, options)
+          .then((response) => response.json())
+          .then((data) => {
+            if (data['redirect']) {
+              window.location.href = data['redirect_url'];
+            }
+            // Optionally close the modal after applying the coupon
+            $('#modalCenter').modal('hide');
+          });
+      }
     });
 
     /*----------------------------

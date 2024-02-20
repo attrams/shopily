@@ -248,17 +248,17 @@ ol {
 /*---------------------
   Modal
 ----------------------- */
-.btn-custom {
+.btn-apply {
   background-color: #8cb54d;
   border-color: #8cb54d;
   color: white;
 }
 
-.btn-custom:hover,
-.btn-custom:focus,
-.btn-custom:active,
-.btn-custom.active,
-.show > .btn-custom.dropdown-toggle {
+.btn-apply:hover,
+.btn-apply:focus,
+.btn-apply:active,
+.btn-apply.active,
+.show > .btn-apply.dropdown-toggle {
   background-color: #7fad39;
   border-color: #7fad39;
   color: white;
