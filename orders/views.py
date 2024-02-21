@@ -11,6 +11,7 @@ from .models import OrderItem, Order
 from .forms import OrderCreateForm
 from cart.cart import Cart
 from .tasks import order_created
+from shop.recommender import Recommender
 
 # Create your views here.
 
@@ -30,13 +31,21 @@ def order_create(request):
 
             order.save()
 
+            # products for recommendation
+            products = []
+
             for item in cart:
-                OrderItem.objects.create(
+                order_item = OrderItem.objects.create(
                     order=order,
                     product=item['product'],
                     price=item['price'],
                     quantity=item['quantity']
                 )
+                products.append(order_item.product)
+
+            # Record products bought together
+            recommender = Recommender()
+            recommender.products_bought(products)
 
             # clear cart
             cart.clear()

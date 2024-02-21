@@ -3,6 +3,7 @@ from django.core.paginator import Paginator
 
 from .models import Category, Product
 from cart.forms import CartAddProductForm
+from .recommender import Recommender
 
 # Create your views here.
 
@@ -51,6 +52,8 @@ def product_detail(request, id, slug):
         available=True
     )
     cart_product_form = CartAddProductForm()
+    r = Recommender()
+    recommended_products = r.suggest_products_for([product], 4)
 
     return render(
         request=request,
@@ -58,6 +61,7 @@ def product_detail(request, id, slug):
         context={
             'product': product,
             'section': 'shop',
-            'cart_product_form': cart_product_form
+            'cart_product_form': cart_product_form,
+            'recommended_products': recommended_products
         }
     )
