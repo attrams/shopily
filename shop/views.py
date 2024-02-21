@@ -39,7 +39,6 @@ def product_list(request, category_slug=None):
             'products': product_list,
             'section': 'shop',
             'all_available_products_count': len(products),
-            'featured_num_range': range(4)
         }
     )
 
