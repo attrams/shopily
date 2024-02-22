@@ -9,6 +9,14 @@
     {{ post.title }}
 {% endblock breadcrumb %}
 
+{% block breadcrumb_subtext %}
+    <ul>
+        <li>By {{ post.author|title }}</li>
+        <li>{{ post.publish }}</li>
+        <li>8 Comments</li>
+    </ul>
+{% endblock breadcrumb_subtext %}
+
 {% block content %}
     <!-- Blog Details Section Begin -->
     <section class="blog-details spad">
