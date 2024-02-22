@@ -19,5 +19,5 @@ This e-commerce platform is a full-featured web application that allows users to
 - [stripe](https://github.com/stripe/stripe-python) - for processing payment.
 - [python-dotenv](https://github.com/theskumar/python-dotenv) - for loading configuration.
 - [weasyprint](https://doc.courtbouillon.org/weasyprint/stable/first_steps.html) - for generating order invoice pdf.
-- [redis](https://github.com/redis/redis-py) - store products to recommend.
+- [redis](https://github.com/redis/redis-py) - stores products for frequently bought together feature.
 - [easy-thumbnails](https://github.com/SmileyChris/easy-thumbnails) - for rendering thumbnails.
