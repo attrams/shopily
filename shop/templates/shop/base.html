@@ -88,7 +88,7 @@
                     <li {% if section == 'shop' %}class="active"{% endif %}>
                         <a href="{% url "shop:product_list" %}">Shop</a>
                     </li>
-                    <li {% if section == 'blog' %}class="active"{% endif %}>
+                    <li {% if section == 'blog' or section == 'blog_detail' %}class="active"{% endif %}>
                         <a href="{% url "blog:post_list" %}">Blog</a>
                     </li>
                     <li {% if section == 'contact' %}class="active"{% endif %}>
@@ -164,7 +164,7 @@
                                 <li {% if section == 'shop' %}class="active"{% endif %}>
                                     <a href="{% url "shop:product_list" %}">Shop</a>
                                 </li>
-                                <li {% if section == 'blog' %}class="active"{% endif %}>
+                                <li {% if section == 'blog' or section == 'blog_detail' %}class="active"{% endif %}>
                                     <a href="{% url "blog:post_list" %}">Blog</a>
                                 </li>
                                 <li {% if section == 'contact' %}class="active"{% endif %}>
@@ -262,24 +262,35 @@
         </section>
         <!-- Hero Section End -->
 
+        <!-- Breadcrumb Section Begin -->
+ 
         {% if section != 'home' %}
-            <!-- Breadcrumb Section Begin -->
-            <section class="breadcrumb-section set-bg" data-setbg="{% static "img/breadcrumb.jpg" %}">
+            <section class="{% if section != 'blog_detail' %}breadcrumb-section{% else %}blog-details-hero{% endif %} set-bg" data-setbg="{% static "img/breadcrumb.jpg" %}">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-12 text-center">
-                            <div class="breadcrumb__text">
+                        <div class="col-lg-12
+                                    {% if section != 'blog_detail' %}text-center{% endif %}">
+                            <div class="{% if section != 'blog_detail' %}
+                                            breadcrumb__text
+                                        {% else %}
+                                            blog__details__hero__text
+                                        {% endif %}">
                                 <h2>
                                     {% block breadcrumb %}
                                     {% endblock breadcrumb %}
                                 </h2>
+                                {% block breadcrumb_subtext %}
+                                {% endblock breadcrumb_subtext %}
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- Breadcrumb Section End -->
         {% endif %}
+        <!-- Breadcrumb Section End -->
+
+        {% block breadcrumb_blog %}
+        {% endblock breadcrumb_blog %}
 
         {% block content %}
         {% endblock content %}
