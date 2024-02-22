@@ -2588,13 +2588,8 @@ ol {
 .blog__details__text p {
   font-size: 18px;
   line-height: 30px;
-}
-
-.blog__details__text h3 {
-  color: #333333;
-  font-weight: 700;
-  line-height: 30px;
-  margin-bottom: 30px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .blog__details__author__pic {

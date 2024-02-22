@@ -1,0 +1,52 @@
+{% extends "shop/base.html" %}
+{% load static %}
+
+{% block title %}
+    {{ post.title }}
+{% endblock title %}
+
+{% block breadcrumb %}
+    {{ post.title }}
+{% endblock breadcrumb %}
+
+{% block content %}
+    <!-- Blog Details Section Begin -->
+    <section class="blog-details spad">
+        <div class="container">
+            <div>
+                <div class="blog__details__text">
+                    <img src="{{ post.image.url }}" alt="">
+                    <p>{{ post.body }}</p>
+                </div>
+                <div class="blog__details__content">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="blog__details__author">
+                                <div class="blog__details__author__pic">
+                                    <img src="{% static "img/no_image.png" %}" alt="">
+                                </div>
+                                <div class="blog__details__author__text">
+                                    <h6>{{ post.author }}</h6>
+                                    <span>Admin</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="blog__details__widget">
+                                <ul>
+                                    <li>
+                                        <span>Categories:</span> Food
+                                    </li>
+                                    <li>
+                                        <span>Tags:</span> All, Trending, Cooking, Healthy Food, Life Style
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Details Section End -->
+{% endblock content %}
