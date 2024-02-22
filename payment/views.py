@@ -15,6 +15,8 @@ stripe.api_version = settings.STRIPE_API_VERSION
 def payment_process(request):
     order_id = request.session.get('order_id', None)
     order = get_object_or_404(Order, id=order_id)
+    # this variable and other variables will automatically be passed to the render context because of the locals()
+    section = 'shop'
 
     if request.method == 'POST':
         success_url = request.build_absolute_uri(reverse('payment:completed'))
@@ -65,8 +67,8 @@ def payment_process(request):
 
 
 def payment_completed(request):
-    return render(request, 'payment/completed.html')
+    return render(request, 'payment/completed.html', {'section': 'shop'})
 
 
 def payment_canceled(request):
-    return render(request, 'payment/canceled.html')
+    return render(request, 'payment/canceled.html', {'section': 'shop'})
