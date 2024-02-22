@@ -13,7 +13,6 @@
     <ul>
         <li>By {{ post.author|title }}</li>
         <li>{{ post.publish }}</li>
-        <li>8 Comments</li>
     </ul>
 {% endblock breadcrumb_subtext %}
 
@@ -24,7 +23,7 @@
             <div>
                 <div class="blog__details__text">
                     <img src="{{ post.image.url }}" alt="">
-                    <p>{{ post.body }}</p>
+                    <p>{{ post.body|linebreaksbr }}</p>
                 </div>
                 <div class="blog__details__content">
                     <div class="row align-items-center">
