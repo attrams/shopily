@@ -89,7 +89,7 @@
                         <a href="{% url "shop:product_list" %}">Shop</a>
                     </li>
                     <li {% if section == 'blog' %}class="active"{% endif %}>
-                        <a href="#">Blog</a>
+                        <a href="{% url "blog:post_list" %}">Blog</a>
                     </li>
                     <li {% if section == 'contact' %}class="active"{% endif %}>
                         <a href="#">Contact</a>
@@ -165,7 +165,7 @@
                                     <a href="{% url "shop:product_list" %}">Shop</a>
                                 </li>
                                 <li {% if section == 'blog' %}class="active"{% endif %}>
-                                    <a href="#">Blog</a>
+                                    <a href="{% url "blog:post_list" %}">Blog</a>
                                 </li>
                                 <li {% if section == 'contact' %}class="active"{% endif %}>
                                     <a href="#">Contact</a>
