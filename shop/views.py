@@ -4,16 +4,20 @@ from django.core.paginator import Paginator
 from .models import Category, Product
 from cart.forms import CartAddProductForm
 from .recommender import Recommender
+from blog.models import Post
 
 # Create your views here.
 
 
 def index(request):
+    posts = Post.published.all()[:3]
+
     return render(
         request=request,
         template_name='shop/product/index.html',
         context={
-            'section': 'home'
+            'section': 'home',
+            'posts': posts
         }
     )
 
