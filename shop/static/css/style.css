@@ -3082,6 +3082,8 @@ ol {
   .header__cart {
     text-align: center;
     padding: 10px 0 24px;
+    visibility: hidden;
+    display: none;
   }
   .over_hid {
     overflow: hidden;
@@ -3337,6 +3339,8 @@ ol {
   .header__cart {
     text-align: center;
     padding: 10px 0 24px;
+    visibility: hidden;
+    display: none;
   }
   .over_hid {
     overflow: hidden;
