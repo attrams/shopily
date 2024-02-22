@@ -1115,66 +1115,6 @@ ol {
   right: 0;
 }
 
-.price-range-wrap .range-slider {
-  margin-top: 20px;
-}
-
-.price-range-wrap .range-slider .price-input {
-  position: relative;
-}
-
-.price-range-wrap .range-slider .price-input:after {
-  position: absolute;
-  left: 38px;
-  top: 13px;
-  height: 1px;
-  width: 5px;
-  background: #dd2222;
-  content: '';
-}
-
-.price-range-wrap .range-slider .price-input input {
-  font-size: 16px;
-  color: #dd2222;
-  font-weight: 700;
-  max-width: 20%;
-  border: none;
-  display: inline-block;
-}
-
-.price-range-wrap .price-range {
-  border-radius: 0;
-}
-
-.price-range-wrap .price-range.ui-widget-content {
-  border: none;
-  background: #ebebeb;
-  height: 5px;
-}
-
-.price-range-wrap .price-range.ui-widget-content .ui-slider-handle {
-  height: 13px;
-  width: 13px;
-  border-radius: 50%;
-  background: #ffffff;
-  border: none;
-  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  outline: none;
-  cursor: pointer;
-}
-
-.price-range-wrap .price-range .ui-slider-range {
-  background: #dd2222;
-  border-radius: 0;
-}
-
-.price-range-wrap
-  .price-range
-  .ui-slider-range.ui-corner-all.ui-widget-header:last-child {
-  background: #dd2222;
-}
-
 .sidebar__item__color {
   float: left;
   width: 40%;
@@ -1715,7 +1655,7 @@ ol {
 
 .product__details__text .product__details__price {
   font-size: 30px;
-  color: #dd2222;
+  color: #6f6f6f;
   font-weight: 600;
   margin-bottom: 15px;
 }
