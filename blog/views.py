@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator
+from django.db.models import Count
 
 from .models import Post
 
@@ -48,4 +49,21 @@ def post_detail(request, year, month, day, post):
         publish__day=day
     )
 
-    return render(request, 'blog/post/detail.html', {'post': post, 'section': 'blog_detail'})
+    # List of similar posts
+    post_tags_ids = post.tags.values_list('id', flat=True)
+    similar_posts = Post.published.filter(
+        tags__in=post_tags_ids
+    ).exclude(id=post.id)
+    similar_posts = similar_posts.annotate(
+        same_tags=Count('tags')
+    ).order_by('-same_tags', '-publish')[:3]
+
+    return render(
+        request,
+        'blog/post/detail.html',
+        {
+            'post': post,
+            'section': 'blog_detail',
+            'similar_posts': similar_posts
+        }
+    )
