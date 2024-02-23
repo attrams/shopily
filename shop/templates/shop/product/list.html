@@ -39,56 +39,9 @@
                                 {% endfor %}
                             </ul>
                         </div>
-                        <div class="sidebar__item">
-                            <div class="latest-product__text">
-                                <h4>Latest Products</h4>
-                                <div class="latest-product__slider owl-carousel">
-                                    {% for product in products %}
-                                        <div class="latest-prdouct__slider__item">
- 
-                                            <a href="{{ product.get_absolute_url }}" class="latest-product__item">
-                                                <div class="latest-product__item__pic">
-                                                    <img src="{% if product.image %}{{ product.image.url }}{% else %}{% static "img/no_image.png" %}{% endif %}" alt="">
-                                                </div>
-                                                <div class="latest-product__item__text">
-                                                    <h6>{{ product.name }}</h6>
-                                                    <span>{{ product.price }}</span>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    {% endfor %}
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="col-lg-9 col-md-7">
-                    <div class="filter__item">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-5">
-                                <div class="filter__sort">
-                                    <span>Sort By</span>
-                                    <select>
-                                        <option value="0">All</option>
-                                        <option value="1">Bought Frequently</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4">
-                                <div class="filter__found">
-                                    <h6>
-                                        <span>{{ all_available_products_count }}</span> Products found
-                                    </h6>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-3">
-                                <div class="filter__option">
-                                    <span class="icon_grid-2x2"></span>
-                                    <span class="icon_ul"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="row">
                         {% for product in products %}
                             <div class="col-lg-4 col-md-6 col-sm-6">
