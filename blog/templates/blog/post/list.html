@@ -7,7 +7,11 @@
 {% endblock title %}
 
 {% block breadcrumb %}
-    Blog
+    {% if tag %}
+        Posts tagged with "{{ tag.name }}"
+    {% else %}
+        Blog
+    {% endif %}
 {% endblock breadcrumb %}
 
 {% block content %}
@@ -37,12 +41,10 @@
                         <div class="blog__sidebar__item">
                             <h4>Search By</h4>
                             <div class="blog__sidebar__item__tags">
-                                <a href="#">Apple</a>
-                                <a href="#">Beauty</a>
-                                <a href="#">Vegetables</a>
-                                <a href="#">Fruit</a>
-                                <a href="#">Healthy Food</a>
-                                <a href="#">Lifestyle</a>
+                                <a href="{% url "blog:post_list" %}">All</a>
+                                {% for tag in tags %}
+                                    <a href="{% url "blog:post_list_by_tag" tag.slug %}">{{ tag.name }}</a>
+                                {% endfor %}
                             </div>
                         </div>
                     </div>
