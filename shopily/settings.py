@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     # installed apps
     'easy_thumbnails',
     'taggit',
+    'django.contrib.postgres',
 ]
 
 MIDDLEWARE = [
