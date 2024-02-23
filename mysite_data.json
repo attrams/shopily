@@ -1,0 +1,3525 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2024-02-12T06:18:15.667Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Prepared Meals",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2024-02-12T06:24:22.365Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Seafood Soup",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2024-02-12T06:27:52.564Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Chicken Steak",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2024-02-12T06:38:06.539Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Falafel",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2024-02-12T06:40:16.598Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Butter Chicken",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2024-02-12T06:43:57.123Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Chicken Masala",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2024-02-12T06:45:57.943Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Rice with Egg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2024-02-12T06:51:56.348Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "Meat with Sauce",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2024-02-12T06:55:25.525Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "Indian Chicken Curry",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2024-02-12T06:58:22.863Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "Vegan Pumpkin Curry",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2024-02-12T07:02:10.578Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "Pasta Fusilli",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2024-02-12T09:51:15.688Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Butter Chicken",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2024-02-12T09:57:34.437Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Chicken Masala",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2024-02-12T09:57:56.900Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Chicken Steak",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2024-02-12T09:58:10.374Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Falafel",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2024-02-12T09:58:26.708Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "Indian Chicken Curry",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2024-02-12T09:58:39.361Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "Meat with Sauce",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2024-02-12T09:58:47.530Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "Pasta Fusilli",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2024-02-12T09:59:10.098Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "Pasta Fusilli",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2024-02-12T09:59:23.396Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Rice with Egg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2024-02-12T09:59:37.060Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Seafood Soup",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2024-02-12T09:59:49.356Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "Vegan Pumpkin Curry",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2024-02-12T10:23:42.754Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Fruits & Vegetables",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2024-02-12T10:25:23.148Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "11",
+    "object_repr": "Carrots",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2024-02-12T10:27:35.634Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "12",
+    "object_repr": "Lemons",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2024-02-12T10:28:21.958Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "13",
+    "object_repr": "Cherries",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2024-02-12T10:29:48.740Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "14",
+    "object_repr": "Green Pears",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2024-02-12T10:31:51.308Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "15",
+    "object_repr": "Raspberries",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2024-02-12T10:34:25.764Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "16",
+    "object_repr": "Limes",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2024-02-12T10:35:01.422Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "17",
+    "object_repr": "Peaches",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2024-02-12T10:36:05.663Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "18",
+    "object_repr": "Red Onions",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2024-02-12T10:37:05.247Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "19",
+    "object_repr": "Dried Gojis",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2024-02-12T10:37:46.048Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "20",
+    "object_repr": "Oranges",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2024-02-12T10:39:15.041Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "18",
+    "object_repr": "Red Onions",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2024-02-13T05:36:10.895Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "11",
+    "object_repr": "Carrots",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Available\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2024-02-13T05:36:31.366Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "11",
+    "object_repr": "Carrots",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Available\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2024-02-13T05:46:25.256Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "21",
+    "object_repr": "Bananas",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2024-02-13T05:47:00.118Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "22",
+    "object_repr": "Pineapple",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2024-02-13T05:47:41.157Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "23",
+    "object_repr": "Watermelons",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2024-02-13T05:48:10.297Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "24",
+    "object_repr": "Strawberries",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2024-02-13T05:48:47.133Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "25",
+    "object_repr": "Red Apples",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2024-02-13T05:50:45.699Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "25",
+    "object_repr": "Red Apples",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2024-02-13T05:51:23.101Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "24",
+    "object_repr": "Strawberries",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2024-02-13T05:52:41.843Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "26",
+    "object_repr": "Grapes",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2024-02-13T05:53:22.344Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "27",
+    "object_repr": "Green Onions",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2024-02-13T05:54:42.365Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "28",
+    "object_repr": "Papaya",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2024-02-13T09:05:41.096Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "19",
+    "object_repr": "Dried Gojis",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2024-02-15T19:39:59.719Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "7",
+    "object_repr": "Order 7",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2024-02-15T19:39:59.902Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "6",
+    "object_repr": "Order 6",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2024-02-15T19:40:00.002Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "5",
+    "object_repr": "Order 5",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2024-02-15T19:40:00.094Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "4",
+    "object_repr": "Order 4",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2024-02-15T19:40:00.180Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "3",
+    "object_repr": "Order 3",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2024-02-15T19:40:00.277Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "2",
+    "object_repr": "Order 2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2024-02-15T19:47:52.128Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "9",
+    "object_repr": "Order 9",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2024-02-15T19:47:52.422Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "8",
+    "object_repr": "Order 8",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2024-02-20T16:16:05.484Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "SUMMER",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2024-02-20T22:03:29.141Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "18",
+    "object_repr": "Order 18",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2024-02-20T22:03:29.319Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "17",
+    "object_repr": "Order 17",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2024-02-20T22:03:29.466Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "16",
+    "object_repr": "Order 16",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2024-02-20T22:03:29.559Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "15",
+    "object_repr": "Order 15",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2024-02-20T22:03:29.660Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "14",
+    "object_repr": "Order 14",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2024-02-20T22:03:29.763Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "13",
+    "object_repr": "Order 13",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2024-02-20T22:03:29.880Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "12",
+    "object_repr": "Order 12",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2024-02-20T22:03:29.960Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "11",
+    "object_repr": "Order 11",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2024-02-20T22:03:30.052Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "10",
+    "object_repr": "Order 10",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2024-02-20T22:03:30.144Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "1",
+    "object_repr": "Order 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2024-02-21T12:34:34.504Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "Summer Sales off",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2024-02-22T08:02:28.097Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "Are metal cooking wares bad?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2024-02-22T08:05:35.471Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "2",
+    "object_repr": "Exploring the Far-Reaching Consequences of Excessive Salt Consumption",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2024-02-22T08:07:50.384Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "3",
+    "object_repr": "Flour Foods That You Shouldn't Take Every Day",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2024-02-22T08:57:30.579Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "4",
+    "object_repr": "Health Benefits of Eating Fruits Everyday",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2024-02-22T08:58:07.467Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "4",
+    "object_repr": "Health Benefits of Eating Fruits Everyday",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2024-02-22T09:09:09.068Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "5",
+    "object_repr": "Why bread is mostly taken during breakfast?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2024-02-23T08:36:43.484Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "Are metal cooking wares bad?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2024-02-23T08:37:06.571Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "2",
+    "object_repr": "Exploring the Far-Reaching Consequences of Excessive Salt Consumption",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2024-02-23T08:37:28.751Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "3",
+    "object_repr": "django",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2024-02-23T08:37:28.928Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "1",
+    "object_repr": "jazz",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2024-02-23T08:37:29.036Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "2",
+    "object_repr": "music",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2024-02-23T08:37:59.559Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "3",
+    "object_repr": "Flour Foods That You Shouldn't Take Every Day",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2024-02-23T08:38:17.467Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "3",
+    "object_repr": "Flour Foods That You Shouldn't Take Every Day",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2024-02-23T08:38:41.367Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "12",
+    "object_repr": "Diet Tips",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2024-02-23T08:39:17.030Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "4",
+    "object_repr": "Health Benefits of Eating Fruits Everyday",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2024-02-23T08:39:43.189Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "5",
+    "object_repr": "Why bread is mostly taken during breakfast?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2024-02-23T18:54:39.874Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "Are metal cooking wares bad?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2024-02-23T18:55:18.251Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "Are metal cooking wares bad?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2024-02-23T18:55:33.572Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "16",
+    "object_repr": "sample",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add category",
+    "content_type": 7,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change category",
+    "content_type": 7,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete category",
+    "content_type": 7,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view category",
+    "content_type": 7,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add product",
+    "content_type": 8,
+    "codename": "add_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change product",
+    "content_type": 8,
+    "codename": "change_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete product",
+    "content_type": 8,
+    "codename": "delete_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view product",
+    "content_type": 8,
+    "codename": "view_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add source",
+    "content_type": 9,
+    "codename": "add_source"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change source",
+    "content_type": 9,
+    "codename": "change_source"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete source",
+    "content_type": 9,
+    "codename": "delete_source"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view source",
+    "content_type": 9,
+    "codename": "view_source"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add thumbnail",
+    "content_type": 10,
+    "codename": "add_thumbnail"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change thumbnail",
+    "content_type": 10,
+    "codename": "change_thumbnail"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete thumbnail",
+    "content_type": 10,
+    "codename": "delete_thumbnail"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view thumbnail",
+    "content_type": 10,
+    "codename": "view_thumbnail"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add thumbnail dimensions",
+    "content_type": 11,
+    "codename": "add_thumbnaildimensions"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change thumbnail dimensions",
+    "content_type": 11,
+    "codename": "change_thumbnaildimensions"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete thumbnail dimensions",
+    "content_type": 11,
+    "codename": "delete_thumbnaildimensions"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view thumbnail dimensions",
+    "content_type": 11,
+    "codename": "view_thumbnaildimensions"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add order item",
+    "content_type": 12,
+    "codename": "add_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change order item",
+    "content_type": 12,
+    "codename": "change_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete order item",
+    "content_type": 12,
+    "codename": "delete_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view order item",
+    "content_type": 12,
+    "codename": "view_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add order",
+    "content_type": 13,
+    "codename": "add_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change order",
+    "content_type": 13,
+    "codename": "change_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete order",
+    "content_type": 13,
+    "codename": "delete_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view order",
+    "content_type": 13,
+    "codename": "view_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add coupon",
+    "content_type": 14,
+    "codename": "add_coupon"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change coupon",
+    "content_type": 14,
+    "codename": "change_coupon"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete coupon",
+    "content_type": 14,
+    "codename": "delete_coupon"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view coupon",
+    "content_type": 14,
+    "codename": "view_coupon"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add sale",
+    "content_type": 15,
+    "codename": "add_sale"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change sale",
+    "content_type": 15,
+    "codename": "change_sale"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete sale",
+    "content_type": 15,
+    "codename": "delete_sale"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view sale",
+    "content_type": 15,
+    "codename": "view_sale"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add post",
+    "content_type": 16,
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change post",
+    "content_type": 16,
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete post",
+    "content_type": 16,
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view post",
+    "content_type": 16,
+    "codename": "view_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add tag",
+    "content_type": 17,
+    "codename": "add_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change tag",
+    "content_type": 17,
+    "codename": "change_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete tag",
+    "content_type": 17,
+    "codename": "delete_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can view tag",
+    "content_type": 17,
+    "codename": "view_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 69,
+  "fields": {
+    "name": "Can add tagged item",
+    "content_type": 18,
+    "codename": "add_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 70,
+  "fields": {
+    "name": "Can change tagged item",
+    "content_type": 18,
+    "codename": "change_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 71,
+  "fields": {
+    "name": "Can delete tagged item",
+    "content_type": 18,
+    "codename": "delete_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 72,
+  "fields": {
+    "name": "Can view tagged item",
+    "content_type": 18,
+    "codename": "view_taggeditem"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$4yqmXNjJME4ueM2sEOSfbc$bwK0xTa9QM+IyCGpcI0LZx/7I/arVz3NW10X02B5s6E=",
+    "last_login": "2024-02-21T10:36:51.331Z",
+    "is_superuser": true,
+    "username": "attrams",
+    "first_name": "",
+    "last_name": "",
+    "email": "attrams@example.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-02-12T06:03:21.735Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "shop",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "shop",
+    "model": "product"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "easy_thumbnails",
+    "model": "source"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "easy_thumbnails",
+    "model": "thumbnail"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "easy_thumbnails",
+    "model": "thumbnaildimensions"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "orders",
+    "model": "orderitem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "orders",
+    "model": "order"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "coupons",
+    "model": "coupon"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "shop",
+    "model": "sale"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 16,
+  "fields": {
+    "app_label": "blog",
+    "model": "post"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 17,
+  "fields": {
+    "app_label": "taggit",
+    "model": "tag"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 18,
+  "fields": {
+    "app_label": "taggit",
+    "model": "taggeditem"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "5rzpl9q6jymzu2ursesbcqqlavcc0roi",
+  "fields": {
+    "session_data": "eyJjYXJ0Ijp7fX0:1rahfw:Xr_K8iFaDoJ2lofZoopoLMScsSePbS5ezmnG6cg8bT4",
+    "expire_date": "2024-02-29T19:45:40.867Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "6d00jsnkfgkhiscfyz9l7av3az0ygo75",
+  "fields": {
+    "session_data": "eyJjYXJ0Ijp7fX0:1rai0o:gInkGfh9p2S1Xp4wVN5sUBk885Rr4Vf5SUQS11YXwJs",
+    "expire_date": "2024-02-29T20:07:14.017Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "6vnd5wqy7ntukq2a54t6587ugbqs167w",
+  "fields": {
+    "session_data": "eyJjYXJ0Ijp7fX0:1rahXZ:2LMEx13ExIvuMK8n4BfKu7fCHsm7epwFHGMDBSpEuSY",
+    "expire_date": "2024-02-29T19:37:01.621Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "7udm9runo1h6ctl0p9a89pwtcpae2dxh",
+  "fields": {
+    "session_data": "eyJjYXJ0Ijp7fX0:1raX5G:LchixmMQy62ODbBz4Sd70TKoJGGbaf-bb35smDKOz9A",
+    "expire_date": "2024-02-29T08:27:06.698Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "d68dot22l58ncqt2pp1g7te5b8hb84uc",
+  "fields": {
+    "session_data": ".eJxVjssOgyAURP-FtSGgvHTZfb-BXO6FattIgroy_ntLwqLdzpk5mZN5OPbZH1ssfiE2Mcm63ywAvuJaAT1hfWSOed3LEnit8EY3fs8U37fW_RPMsM11LQMEiLYfAFPvTNCWktZg3Cidc2ZUCpJBIZIcCAcXUCUrYiSrNKpRfaW5UDsp-44hlJ1N53V9AJ0WP-I:1rb4Sm:HLmHTsbyuZEQYm292Ok1E153Wpn9WGDvL_O-JyMwPH4",
+    "expire_date": "2024-03-01T20:05:36.350Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "eaito3d4zsq5n02xuoe8ft84qf0senx4",
+  "fields": {
+    "session_data": "eyJvcmRlcl9pZCI6MjEsImNhcnQiOnsiNCI6eyJxdWFudGl0eSI6MSwicHJpY2UiOiI0Ni4wMCJ9fSwiY291cG9uX2lkIjoxfQ:1rcYyn:1hspEWUrDVPMYumzfjSCicEERUMdvJez-dGbMT4-qHI",
+    "expire_date": "2024-03-05T22:52:49.333Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "elgdqfy5v9jvc1ctqh1e8g63st7bfx66",
+  "fields": {
+    "session_data": "eyJjYXJ0Ijp7fX0:1rbml9:BBIyQeeirCo3sdv38m0iZ5AiqpY7yfJquFIo61YYYRo",
+    "expire_date": "2024-03-03T19:23:31.741Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "gc8qcteu8xco9pm6y38k93dsir7jc4oe",
+  "fields": {
+    "session_data": "eyJjYXJ0Ijp7fX0:1rd4Ny:j5cLIdMEe3PBosDZC2pKX5UjME0rRkhMOmoohFtVIeY",
+    "expire_date": "2024-03-07T08:24:54.505Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "igqtsw6tow57ncqro6wz552sn10zqfeh",
+  "fields": {
+    "session_data": "eyJjYXJ0Ijp7fX0:1rc0D4:dX4yAHeSJWb0Q2GliSJmL75iZR-FgW2YZlO-gYPzepw",
+    "expire_date": "2024-03-04T09:45:14.150Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "jdypv5njklwfiel3ek85zmrksmp7rz1q",
+  "fields": {
+    "session_data": ".eJxVjsEOgyAQRP9lz4aAIqLH3vsNZlmg2jZgEQ-N8d-rjYf2MoedNzO7Qo9LHvpldqkfLXQgoPi9GaSHC4dh7xhukVEMOY2GHQg73Zldo3XPy8n-FQw4D0daGDTomrJC8qVWpm6sr2tUuhVaa9VKiV4R515UliptSPqGO2cbWZNs5V4akz2fLHkBhClDt4I85LVgyGN-QycKmNJIbp-UinEO27azcZli-EbF9gHn7k5N:1rcYQ9:7qZPJU0lhZr0cGrSs0kWyaLZnVsTPnwB4zkLXl9zxsQ",
+    "expire_date": "2024-03-05T22:17:01.665Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "kg9b61st7cqo7yol5mmkna28l36dygmq",
+  "fields": {
+    "session_data": "eyJjYXJ0Ijp7fX0:1rah6u:IjXjqzYxuVA3T4VhmN7TagSgF1xEaFJ80m4_q-t4jB8",
+    "expire_date": "2024-02-29T19:09:28.596Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "lydh6rmp6n7dtqtmpunpgbv0ryyjshu8",
+  "fields": {
+    "session_data": ".eJxVjk0OgyAUhO_C2hCRX1123zOYxwOqrYEGYWW8e7Vx0e4m881MZiMj1DKNdfV5nB0ZCCPNr2cBXz6ewD0hPhLFFEueLT0j9KIrvSfnl9uV_RuYYJ3ONrNgweuOA4bOKCu1C1KCMj0zxqheCAgK2zYw7pAbiyLo1nunhUTRi2M0ZXed7HhDEHIhw7YfKtV3il8Q67LsHw5HRgk:1rdahu:ZJWpbiEDq_d420K09J-0eWZwLskI43J9KzL89KY8pjg",
+    "expire_date": "2024-03-08T18:55:38.726Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "mn4v60u5rxrc26piw4v9guymi4fa1tl0",
+  "fields": {
+    "session_data": "eyJjYXJ0Ijp7fX0:1rcTZz:QaMQ6cnQE4elKqqF2ipKtb2tJ0SmOg03uVcfXh_aowk",
+    "expire_date": "2024-03-05T17:06:51.794Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ordiu0de93mdwxnlc5u50oujpp1m52uw",
+  "fields": {
+    "session_data": "eyJjYXJ0Ijp7fX0:1rcYjy:cGQfPocajR7ZFnQAITvqTlQ6_B3kiupnwDQrA9QREng",
+    "expire_date": "2024-03-05T22:37:30.833Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "qxbc1gmmah3qvipcp9cy16b25rbhpyqf",
+  "fields": {
+    "session_data": "eyJjYXJ0Ijp7fX0:1rdEp9:BrcHWCqebiuVi6xIwehwCEhJiNQ38NhScXSy79gi-xk",
+    "expire_date": "2024-03-07T19:33:39.842Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "u5l5g1juakcyuppzlbbstirbwuc1k907",
+  "fields": {
+    "session_data": "eyJjYXJ0Ijp7fX0:1rdaiA:Ro7pLTU6Ta07Zz9b18sFAqph7T6TG75iX_Fqe_eqwZs",
+    "expire_date": "2024-03-08T18:55:54.449Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "v5pxhpestmeijbegw1n4wvwou22it4yv",
+  "fields": {
+    "session_data": "eyJjYXJ0Ijp7fX0:1raJze:rUYsjQb35JS3-qJ2YfifHQEunSqTHS2AbQW54vSfGW0",
+    "expire_date": "2024-02-28T18:28:26.397Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "v7t2101cdbd2mvhsgqt5b4qnunsi61ic",
+  "fields": {
+    "session_data": ".eJx1zkEKhDAMheG7vLWEJm102tuIzMKNqNSFSO8-FB20QjdZfeT9B4Z-jQgHhPNdtn6KY9wRvGswr-PwRYAh_SA10JJYuYlYcm02rjR8E9eSMZmwLc1jScn7TOpClPT88gqWxxT_ja_WsF410lWNoU6RUvoBGnRUxg:1raBvx:lkZIbUnb3qO0wsfj--SOoMnpxzzWHkNVySy09g4UiEE",
+    "expire_date": "2024-02-28T09:52:05.222Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "xk8dde7m2js2gbovya88v7moj1a46lfk",
+  "fields": {
+    "session_data": "eyJjYXJ0Ijp7fX0:1rdRUk:JD-gp2ZC7Z4V7JMtRjQQmVwNSJLQZnI6vbMwawar5Ys",
+    "expire_date": "2024-03-08T09:05:26.176Z"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 1,
+  "fields": {
+    "name": "Prepared Meals",
+    "slug": "prepared-meals"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 2,
+  "fields": {
+    "name": "Fruits & Vegetables",
+    "slug": "fruits-vegetables"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 1,
+  "fields": {
+    "category": 1,
+    "name": "Seafood Soup",
+    "slug": "seafood-soup",
+    "image": "products/2024/02/12/seafood-soup.jpg",
+    "description": "Our Korean Seafood Soup is not just a meal; it's an experience. Served bubbling hot in a stone pot, it's a feast for the senses, with vibrant colors and aromatic steam inviting you to indulge. Perfect for sharing, this dish is a communal delight, meant to be enjoyed with friends and family over steaming bowls of rice and a variety of side dishes.\r\n\r\nDive into the heartwarming embrace of our Korean Seafood Soup, a traditional culinary masterpiece that brings the bountiful essence of the ocean right to your bowl. Each spoonful of this soup is a testament to the rich and vibrant flavors that Korean cuisine is celebrated for, meticulously prepared to offer you an authentic and unforgettable dining experience.\r\n\r\nOur Korean Seafood Soup, also known as Haemul-tang, is a harmonious blend of the freshest seafood ingredients, including succulent shrimp, tender mussels, delicate squid, and plump clams, all simmered to perfection in a savory broth. The foundation of this exquisite soup is a deeply flavored stock, enriched with the essence of kelp and anchovies, providing a natural umami that beautifully complements the seafood medley.\r\n\r\nThe magic of this soup lies in its vibrant seasoning - a carefully crafted mix of Korean chili flakes (gochugaru), garlic, and ginger, bringing a gentle heat that warms the soul without overpowering the delicate taste of the seafood. A splash of soy sauce and a hint of sweetness balance the flavors, creating a broth that is complex, yet comforting.",
+    "price": "30.00",
+    "available": true,
+    "created": "2024-02-12T06:24:22.364Z",
+    "updated": "2024-02-12T09:59:37.058Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 2,
+  "fields": {
+    "category": 1,
+    "name": "Chicken Steak",
+    "slug": "chicken-steak",
+    "image": "products/2024/02/12/chicken-steak.jpg",
+    "description": "Indulge in the sumptuous delight of our Chicken Steak, a dish that celebrates the simplicity and elegance of perfectly cooked poultry. Crafted for those who savor the finer nuances of culinary art, this chicken steak promises a dining experience that's both satisfying and sophisticated.\r\n\r\nAt the heart of this dish lies a premium, boneless chicken breast, meticulously tenderized and marinated to ensure every fiber of the meat is infused with flavor. The chicken is seasoned with a blend of herbs and spices, striking the perfect balance between bold and delicate, before being grilled to golden perfection. The exterior boasts a slightly crisp, caramelized crust, while the interior remains wonderfully juicy and tender, creating a contrast that's a delight to the senses.\r\n\r\nOur Chicken Steak is then elegantly plated, drizzled with a rich, homemade sauce that complements the chicken's natural flavors without overshadowing them. Whether it's a classic mushroom sauce, a vibrant chimichurri, or a creamy garlic sauce, each option is designed to enhance the succulent taste of the chicken, adding layers of depth and richness to the dish.",
+    "price": "20.00",
+    "available": true,
+    "created": "2024-02-12T06:27:52.563Z",
+    "updated": "2024-02-12T09:57:56.899Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 3,
+  "fields": {
+    "category": 1,
+    "name": "Falafel",
+    "slug": "falafel",
+    "image": "products/2024/02/12/falafel.jpg",
+    "description": "Embark on a culinary journey to the heart of the Middle East with our authentic Falafel, a vegetarian delight that has captivated palates around the globe. Renowned for its crispy exterior and soft, herbaceous interior, falafel offers a symphony of flavors and textures that make it a beloved dish among food enthusiasts.\r\n\r\nOur Falafel is meticulously crafted from finely ground chickpeas, infused with a vibrant blend of fresh parsley, cilantro, and green onions. The mixture is seasoned with a medley of aromatic spices including cumin, coriander, and a hint of garlic and onion, creating a rich tapestry of flavors that is both bold and comforting. The ingredients are carefully shaped into small patties or balls and then deep-fried to achieve a golden, crunchy exterior that encases the moist, flavorful interior.\r\n\r\nServed hot and fresh, each bite of our Falafel bursts with the earthy flavors of chickpeas and the freshness of herbs, while the spices leave a warm, lingering taste on the palate. The crisp texture contrasts beautifully with the tender inside, making every bite an experience to savor.",
+    "price": "25.50",
+    "available": true,
+    "created": "2024-02-12T06:38:06.538Z",
+    "updated": "2024-02-12T09:58:10.372Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 4,
+  "fields": {
+    "category": 1,
+    "name": "Butter Chicken",
+    "slug": "butter-chicken",
+    "image": "products/2024/02/12/butter-chicken.jpg",
+    "description": "Immerse yourself in the rich, indulgent flavors of Butter Chicken, a classic dish that stands as a pillar of North Indian cuisine. Revered for its creamy texture and aromatic blend of spices, this dish offers a comforting embrace that resonates with the soul. Perfect for those who cherish the depth of Indian culinary traditions, our Butter Chicken is a symphony of flavors designed to delight and satisfy.\r\n\r\nAt the heart of this exquisite dish lies tender, marinated pieces of chicken, first grilled to perfection to imbue them with a smoky undertone. These succulent morsels are then gently simmered in a velvety tomato-based sauce, enriched with a generous dollop of butter and a touch of cream for a luxurious mouthfeel. The sauce, a masterpiece of culinary craft, is seasoned with a hand-picked selection of spices, including garam masala, turmeric, cumin, and coriander, creating a complexity of flavors that dance harmoniously on the palate.\r\n\r\nA hint of sweetness from the tomatoes balances the warmth of the spices, while the creaminess of the sauce softens the dish's overall profile, making it both rich and accessible. The addition of kasuri methi (dried fenugreek leaves) towards the end lends an earthy undertone that elevates the dish to new heights of flavor.",
+    "price": "46.00",
+    "available": true,
+    "created": "2024-02-12T06:40:16.597Z",
+    "updated": "2024-02-12T09:51:15.687Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 5,
+  "fields": {
+    "category": 1,
+    "name": "Chicken Masala",
+    "slug": "chicken-masala",
+    "image": "products/2024/02/12/chicken-masala.jpg",
+    "description": "Step into a world where spice meets sophistication with our Chicken Masala, a dish that embodies the vibrant spirit and rich heritage of Indian cuisine. This beloved classic marries the robust flavors of a variety of spices with the tender juiciness of chicken, creating a culinary masterpiece that is both comforting and exhilarating.\r\n\r\nOur Chicken Masala starts with boneless, skinless chicken pieces that are marinated in a blend of yogurt and spices, ensuring that every bite is infused with flavor. The chicken is then seared to perfection, locking in its natural juices and setting the stage for the magic to unfold.\r\n\r\nThe heart of the dish lies in its masala, a rich and aromatic sauce made from a carefully curated blend of spices including turmeric, cumin, coriander, garam masala, and a hint of chili for heat. These spices are sautéed with onions, garlic, and ginger, creating a base that is both spicy and slightly sweet, with a depth of flavor that is unmistakably Indian.\r\n\r\nTomatoes are then added to the mix, lending a subtle acidity that balances the warmth of the spices, while a splash of cream brings a luxurious smoothness to the sauce, tempering its fiery edge. The chicken is simmered gently in this masala until it is tender and fully imbued with the flavors of the sauce.",
+    "price": "23.46",
+    "available": true,
+    "created": "2024-02-12T06:43:57.122Z",
+    "updated": "2024-02-12T09:57:34.436Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 6,
+  "fields": {
+    "category": 1,
+    "name": "Rice with Egg",
+    "slug": "rice-with-egg",
+    "image": "products/2024/02/12/rice-with-egg.jpg",
+    "description": "Egg Fried Rice stands as a testament to the beauty of simplicity in cooking, offering a delightful combination of fluffy rice, tender scrambled eggs, and a subtle blend of flavors that come together to create a dish that is both humble and profoundly satisfying. This versatile dish has earned its place at tables around the world, cherished for its comforting essence and the ease with which it can be customized to suit any palate.\r\n\r\nAt its core, our Egg Fried Rice starts with perfectly cooked grains of rice that have been cooled to ensure they fry up nicely, achieving that coveted separation and slightly crispy texture. The rice serves as a canvas for the rich, golden scrambled eggs, which are lightly seasoned and cooked just until they're soft and slightly runny, ensuring they retain their moisture and delicate texture.\r\n\r\nThe magic of Egg Fried Rice lies in the symphony of flavors brought to life with a judicious use of ingredients. A dash of soy sauce adds depth and a savory umami kick, while a hint of sesame oil lends a nutty aroma and richness that elevates the dish from simple to sublime. Scallions or green onions are sprinkled throughout, offering a crisp, oniony bite that refreshes the palate with each forkful.",
+    "price": "32.00",
+    "available": true,
+    "created": "2024-02-12T06:45:57.942Z",
+    "updated": "2024-02-12T09:59:23.395Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 7,
+  "fields": {
+    "category": 1,
+    "name": "Meat with Sauce",
+    "slug": "meat-with-sauce",
+    "image": "products/2024/02/12/meat-with-sauce.jpg",
+    "description": "Indulge in the ultimate comfort food experience with our Succulent Meat served in a Rich, Savory Sauce. This dish is a celebration of flavors and textures, designed to satisfy the deepest of cravings and elevate your dining experience to new heights. Perfect for those who appreciate the finer nuances of a well-crafted meat dish, it promises to be a memorable part of your culinary journey.\r\n\r\nAt the heart of this dish is a tender, meticulously cooked cut of meat, chosen for its quality and flavor. Whether it's a juicy piece of steak, slow-cooked beef brisket, tender chicken breast, or succulent lamb shank, the meat is prepared to perfection. We ensure it's cooked just right to retain its moisture and tenderness, creating a melt-in-your-mouth experience that's hard to forget.\r\n\r\nBut the true magic lies in the sauce—a rich, savory concoction that's been simmered to perfection. This isn't just any sauce; it's a carefully balanced blend of ingredients that might include a robust stock, aromatic herbs, and a selection of spices, all coming together to create a depth of flavor that complements the meat beautifully. Whether it's a creamy mushroom sauce, a bold red wine reduction, or a tangy barbecue glaze, the sauce adds a layer of complexity and richness that elevates the dish to a whole new level.",
+    "price": "52.40",
+    "available": true,
+    "created": "2024-02-12T06:51:56.347Z",
+    "updated": "2024-02-12T09:58:39.359Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 8,
+  "fields": {
+    "category": 1,
+    "name": "Indian Chicken Curry",
+    "slug": "indian-chicken-curry",
+    "image": "products/2024/02/12/indian-chicken-curry.jpg",
+    "description": "Embark on a culinary voyage to the heart of India with our authentic Indian Chicken Curry, a dish that encapsulates the rich tapestry of spices, aromas, and flavors that Indian cuisine is celebrated for. This dish is a harmonious blend of tradition and taste, offering a comforting warmth that soothes the soul and ignites the senses.\r\n\r\nAt the core of our Indian Chicken Curry is tender, succulent chicken that has been marinated and then simmered gently in a vibrant, aromatic sauce. The chicken absorbs the complex medley of spices, becoming infused with the depth of flavors that make this dish so distinctive and beloved.\r\n\r\nThe curry sauce is a masterpiece of culinary craft, beginning with a base of sautéed onions, garlic, and ginger, which lays down the foundational flavors. Tomatoes are then added, lending a subtle acidity that balances the richness of the dish. The true essence of the curry comes from its carefully selected blend of spices, including turmeric, cumin, coriander, garam masala, and a hint of chili powder for a gentle kick. These spices are expertly combined to create a sauce that is deep, rich, and full of character, with each spice playing its part in the symphony of flavors.",
+    "price": "60.00",
+    "available": true,
+    "created": "2024-02-12T06:55:25.524Z",
+    "updated": "2024-02-12T09:58:26.707Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 9,
+  "fields": {
+    "category": 1,
+    "name": "Vegan Pumpkin Curry",
+    "slug": "vegan-pumpkin-curry",
+    "image": "products/2024/02/12/vegan-pumpkin-curry.jpg",
+    "description": "Immerse yourself in the warmth and richness of our Vegan Pumpkin Curry, a dish that beautifully marries the essence of autumn with the vibrant traditions of vegan cuisine. This comforting curry is a testament to the power of plant-based ingredients, creating a symphony of flavors and textures that nourish the soul and delight the senses.\r\n\r\nAt the heart of this exquisite dish lies the humble pumpkin, transformed into a velvety, rich base that lends a natural sweetness and creaminess. The pumpkin is meticulously cooked until tender, then blended into a smooth and luscious sauce that serves as the foundation of the curry. Its natural earthiness is a perfect canvas for the array of spices that define this dish.\r\n\r\nAromatic spices such as cumin, coriander, turmeric, and garam masala are gently sautéed to release their fragrant oils, creating a base that is deeply flavorful and inviting. The addition of fresh ginger and garlic adds a zesty kick, while a hint of chili brings a subtle warmth that balances the pumpkin's sweetness. Coconut milk is stirred in to introduce a luxurious creaminess and a tropical note that complements the spices beautifully.",
+    "price": "56.70",
+    "available": true,
+    "created": "2024-02-12T06:58:22.862Z",
+    "updated": "2024-02-12T09:59:49.355Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 10,
+  "fields": {
+    "category": 1,
+    "name": "Pasta Fusilli",
+    "slug": "pasta-fusilli",
+    "image": "products/2024/02/12/pasta-fusilli-with-fresh-black-olives-and-tomatoes.jpg",
+    "description": "Dive into a culinary delight with our Pasta Fusilli with Black Olives and Tomatoes, a dish that marries the simplicity of Mediterranean flavors with the comforting texture of perfectly cooked pasta. This vibrant dish is a celebration of quality ingredients and harmonious flavors, making it a perfect choice for those seeking a meal that's both satisfying and refreshingly simple. The fusilli, with its corkscrew shape, expertly catches and holds onto the sauce, ensuring a burst of flavor with every bite, while its al dente texture provides a delightful contrast to the softness of the tomatoes and the distinct, savory bite of black olives.\r\n\r\nThe sauce, a light yet flavorful creation, showcases the natural sweetness and acidity of ripe tomatoes, gently simmered to enhance their flavor and create a rich, yet not overpowering, base. This tomato sauce serves as the perfect backdrop for the briny depth of black olives, which add a layer of complexity and an earthy richness to the dish. A sprinkle of fresh herbs, such as basil or oregano, introduces a bright, aromatic touch that elevates the dish, infusing it with the essence of the Mediterranean.\r\n\r\nTo complete this culinary masterpiece, a generous grating of Parmesan cheese is added just before serving, melting slightly to add a salty, nutty finish that complements the acidity of the tomatoes and the richness of the olives beautifully. The result is a dish that's both comforting and sophisticated, offering a balance of flavors that speaks to the heart of Italian cooking. Whether enjoyed on a cozy night in or served to guests at a casual dinner party, Pasta Fusilli with Black Olives and Tomatoes is a testament to the joy of simple, well-prepared food, promising to delight the palate and nourish the soul.",
+    "price": "25.50",
+    "available": true,
+    "created": "2024-02-12T07:02:10.577Z",
+    "updated": "2024-02-12T09:59:10.097Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 11,
+  "fields": {
+    "category": 2,
+    "name": "Carrots",
+    "slug": "carrots",
+    "image": "products/2024/02/12/carrots.jpg",
+    "description": "Our farm-fresh carrots are a vibrant orange, crunchy, and sweet, making them perfect for both raw snacking and cooking. Rich in beta-carotene, fiber, and vitamins, they are a healthy addition to any meal.",
+    "price": "1.50",
+    "available": true,
+    "created": "2024-02-12T10:25:23.147Z",
+    "updated": "2024-02-13T05:36:31.365Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 12,
+  "fields": {
+    "category": 2,
+    "name": "Lemons",
+    "slug": "lemons",
+    "image": "products/2024/02/12/lemons.jpg",
+    "description": "Bright and zesty, our lemons are picked at peak ripeness to ensure the perfect balance of tang and juiciness. Ideal for adding a fresh squeeze to beverages, dressings, or dishes for that citrusy kick.",
+    "price": "0.50",
+    "available": true,
+    "created": "2024-02-12T10:27:35.633Z",
+    "updated": "2024-02-12T10:27:35.633Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 13,
+  "fields": {
+    "category": 2,
+    "name": "Cherries",
+    "slug": "cherries",
+    "image": "products/2024/02/12/cherries.jpg",
+    "description": "Juicy and bursting with flavor, our cherries are a delightful treat. Handpicked for their deep red color and plumpness, they're perfect for snacking, baking, or creating sumptuous desserts.",
+    "price": "5.99",
+    "available": true,
+    "created": "2024-02-12T10:28:21.956Z",
+    "updated": "2024-02-12T10:28:21.956Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 14,
+  "fields": {
+    "category": 2,
+    "name": "Green Pears",
+    "slug": "green-pears",
+    "image": "products/2024/02/12/green-pears.jpg",
+    "description": "Our green pears are crisp, sweet, and slightly tangy. They are harvested with care to ensure a smooth texture and are delicious whether eaten fresh or used in cooking.",
+    "price": "2.49",
+    "available": true,
+    "created": "2024-02-12T10:29:48.739Z",
+    "updated": "2024-02-12T10:29:48.739Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 15,
+  "fields": {
+    "category": 2,
+    "name": "Raspberries",
+    "slug": "raspberries",
+    "image": "products/2024/02/12/raspberries.jpg",
+    "description": "These ruby-red raspberries are as nutritious as they are flavorful, offering a perfect blend of sweetness and tartness. They're great for smoothies, desserts, or eating straight from the box.",
+    "price": "4.00",
+    "available": true,
+    "created": "2024-02-12T10:31:51.307Z",
+    "updated": "2024-02-12T10:31:51.307Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 16,
+  "fields": {
+    "category": 2,
+    "name": "Limes",
+    "slug": "limes",
+    "image": "products/2024/02/12/limes.jpg",
+    "description": "Our limes are a must-have kitchen staple, offering a burst of acidity that brightens up dishes and drinks alike. They're small but mighty, with a potent flavor that goes a long way.",
+    "price": "0.33",
+    "available": true,
+    "created": "2024-02-12T10:34:25.764Z",
+    "updated": "2024-02-12T10:34:25.764Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 17,
+  "fields": {
+    "category": 2,
+    "name": "Peaches",
+    "slug": "peaches",
+    "image": "products/2024/02/12/peaches.jpg",
+    "description": "Enjoy the succulent, fuzzy skin and sweet, juicy flesh of our ripe peaches. Perfect for eating fresh, baking into pies, or grilling, they're a summertime favorite.",
+    "price": "2.99",
+    "available": true,
+    "created": "2024-02-12T10:35:01.421Z",
+    "updated": "2024-02-12T10:35:01.421Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 18,
+  "fields": {
+    "category": 2,
+    "name": "Red Onions",
+    "slug": "red-onions",
+    "image": "products/2024/02/12/red-onions_KIDrXNB.jpg",
+    "description": "With their deep purple outer skin and white and red-tinged interior, our red onions add a vibrant color and a mild, sweet flavor to any dish. They're ideal for salads, salsas, and cooking.",
+    "price": "1.29",
+    "available": true,
+    "created": "2024-02-12T10:36:05.662Z",
+    "updated": "2024-02-12T10:39:15.040Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 19,
+  "fields": {
+    "category": 2,
+    "name": "Dried Gojis",
+    "slug": "dried-gojis",
+    "image": "products/2024/02/13/dried-goji.jpg",
+    "description": "Packed with antioxidants, our dried goji berries are a superfood treat. Chewy and slightly sweet, they make a great addition to oatmeal, trail mix, or as a healthy snack on their own.",
+    "price": "15.00",
+    "available": true,
+    "created": "2024-02-12T10:37:05.246Z",
+    "updated": "2024-02-13T09:05:41.095Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 20,
+  "fields": {
+    "category": 2,
+    "name": "Oranges",
+    "slug": "oranges",
+    "image": "products/2024/02/12/orange.jpg",
+    "description": "Our oranges are a juicy delight, offering a sweet and tangy flavor that's packed with vitamin C. Perfect for juicing, snacking, or adding a citrus twist to recipes.",
+    "price": "1.00",
+    "available": true,
+    "created": "2024-02-12T10:37:46.047Z",
+    "updated": "2024-02-12T10:37:46.047Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 21,
+  "fields": {
+    "category": 2,
+    "name": "Bananas",
+    "slug": "bananas",
+    "image": "products/2024/02/13/bananas.jpg",
+    "description": "Bananas, a staple among fruits, are loved for their creamy texture and sweet, mellow flavor. Priced at $0.58 per pound, they offer an affordable option for a healthy snack. Rich in potassium and vitamins, bananas are perfect for a quick energy boost any time of the day. Whether eaten raw, added to smoothies, or used in baking, bananas are versatile and a household favorite.",
+    "price": "0.58",
+    "available": true,
+    "created": "2024-02-13T05:46:25.255Z",
+    "updated": "2024-02-13T05:46:25.255Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 22,
+  "fields": {
+    "category": 2,
+    "name": "Pineapple",
+    "slug": "pineapple",
+    "image": "products/2024/02/13/pineapple.jpg",
+    "description": "Priced at $2.99 each, pineapples are tropical delights known for their tangy and sweet taste. With a spiky exterior hiding juicy, golden flesh, pineapples are not only delicious but also packed with vitamins C and A, and manganese. They are perfect for eating fresh, grilling, or using in desserts and cocktails, adding a burst of flavor to any dish.",
+    "price": "2.99",
+    "available": true,
+    "created": "2024-02-13T05:47:00.117Z",
+    "updated": "2024-02-13T05:47:00.117Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 23,
+  "fields": {
+    "category": 2,
+    "name": "Watermelons",
+    "slug": "watermelons",
+    "image": "products/2024/02/13/watermelons.jpg",
+    "description": "Watermelons, synonymous with summer, are sold at $4.99 for a medium-sized one. These large, green fruits have a water content of over 90%, making them incredibly refreshing. Inside, the bright red flesh is sweet and crisp, containing vitamins A, C, and antioxidants. Watermelons are perfect for hydrating on a hot day, whether eaten in slices, cubed in salads, or juiced.",
+    "price": "4.99",
+    "available": true,
+    "created": "2024-02-13T05:47:41.157Z",
+    "updated": "2024-02-13T05:47:41.157Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 24,
+  "fields": {
+    "category": 2,
+    "name": "Strawberries",
+    "slug": "strawberries",
+    "image": "products/2024/02/13/strawberries_peMrAku.jpg",
+    "description": "Priced at $3.50 per pint, strawberries are the epitome of sweetness, with a juicy texture and a vibrant red color. These heart-shaped berries are not only delicious but also packed with vitamin C, manganese, and antioxidants. Ideal for eating fresh, in salads, desserts, or jams, strawberries add a touch of elegance and flavor to any culinary creation.",
+    "price": "3.50",
+    "available": true,
+    "created": "2024-02-13T05:48:10.296Z",
+    "updated": "2024-02-13T05:51:23.100Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 25,
+  "fields": {
+    "category": 2,
+    "name": "Red Apples",
+    "slug": "red-apples",
+    "image": "products/2024/02/13/red-apples.jpg",
+    "description": "Red apples, sold at $1.20 per pound, are crunchy, juicy, and slightly sweet with a hint of tartness. Rich in fiber and antioxidants, they are a healthy snack option that can also be baked, juiced, or added to salads. Their versatility and storability make them a popular choice for consumers looking for both taste and nutrition.",
+    "price": "1.20",
+    "available": true,
+    "created": "2024-02-13T05:48:47.132Z",
+    "updated": "2024-02-13T05:50:45.697Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 26,
+  "fields": {
+    "category": 2,
+    "name": "Grapes",
+    "slug": "grapes",
+    "image": "products/2024/02/13/grapes.jpg",
+    "description": "Grapes, available at $2.40 per pound, come in clusters of juicy, plump orbs that burst with flavor at every bite. Whether you prefer the green, red, or black varieties, grapes are rich in vitamins C and K. They're perfect for snacking, freezing for a cool treat, or using in cooking to add sweetness to savory dishes and salads.",
+    "price": "2.40",
+    "available": true,
+    "created": "2024-02-13T05:52:41.842Z",
+    "updated": "2024-02-13T05:52:41.842Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 27,
+  "fields": {
+    "category": 2,
+    "name": "Green Onions",
+    "slug": "green-onions",
+    "image": "products/2024/02/13/green-onions.jpg",
+    "description": "Green onions, priced at $0.75 per bunch, add a mild, crisp bite to any dish. These young shoots of the onion family are used both for their slender, green tops and the white bulb at the base. Essential in salads, soups, and Asian cuisine, green onions are a versatile ingredient that brings freshness and color to the table.",
+    "price": "0.75",
+    "available": true,
+    "created": "2024-02-13T05:53:22.343Z",
+    "updated": "2024-02-13T05:53:22.343Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 28,
+  "fields": {
+    "category": 2,
+    "name": "Papaya",
+    "slug": "papaya",
+    "image": "products/2024/02/13/papaya.jpg",
+    "description": "Priced at $5.00 for a large one, papaya is a tropical fruit with a sweet, musky flavor and butter-like consistency. Its orange flesh is not only delicious but also a powerhouse of nutrients, including vitamins C and A, and papain enzyme, which aids digestion. Papayas are excellent eaten fresh, blended into smoothies, or used in salads and desserts for a tropical twist.",
+    "price": "5.00",
+    "available": true,
+    "created": "2024-02-13T05:54:42.364Z",
+    "updated": "2024-02-13T05:54:42.364Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 19,
+  "fields": {
+    "first_name": "john",
+    "last_name": "doe",
+    "email": "johndoe@example.com",
+    "address": "22 Avenue, James Lawson, Accra, Ghana",
+    "postal_code": "00233",
+    "city": "Accra",
+    "created": "2024-02-20T21:40:53.032Z",
+    "updated": "2024-02-20T21:48:03.593Z",
+    "paid": true,
+    "stripe_id": "pi_3Om1AfJUwbftZRIf0owhxBpk",
+    "coupon": 1,
+    "discount": 10
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 20,
+  "fields": {
+    "first_name": "john",
+    "last_name": "doe",
+    "email": "johndoe@example.com",
+    "address": "22 Avenue, James Lawson, Accra, Ghana",
+    "postal_code": "00233",
+    "city": "Accra",
+    "created": "2024-02-20T22:15:49.265Z",
+    "updated": "2024-02-20T22:16:41.459Z",
+    "paid": true,
+    "stripe_id": "pi_3Om1cNJUwbftZRIf1udikGhx",
+    "coupon": 1,
+    "discount": 10
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 21,
+  "fields": {
+    "first_name": "john",
+    "last_name": "doe",
+    "email": "johndoe@example.com",
+    "address": "22 Avenue, James Lawson, Accra, Ghana",
+    "postal_code": "00233",
+    "city": "Accra",
+    "created": "2024-02-20T22:50:54.750Z",
+    "updated": "2024-02-20T22:51:38.255Z",
+    "paid": true,
+    "stripe_id": "pi_3Om2ABJUwbftZRIf0RLe1oBt",
+    "coupon": 1,
+    "discount": 10
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 22,
+  "fields": {
+    "first_name": "john",
+    "last_name": "doe",
+    "email": "johndoe@example.com",
+    "address": "22 Avenue, James Lawson, Accra, Ghana",
+    "postal_code": "00233",
+    "city": "Accra",
+    "created": "2024-02-21T11:33:54.046Z",
+    "updated": "2024-02-21T11:34:35.682Z",
+    "paid": true,
+    "stripe_id": "pi_3OmE4XJUwbftZRIf1NSfauuz",
+    "coupon": 1,
+    "discount": 10
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 23,
+  "fields": {
+    "first_name": "john",
+    "last_name": "doe",
+    "email": "johndoe@example.com",
+    "address": "22 Avenue, James Lawson, Accra, Ghana",
+    "postal_code": "00233",
+    "city": "Accra",
+    "created": "2024-02-22T17:24:16.803Z",
+    "updated": "2024-02-22T17:24:16.803Z",
+    "paid": false,
+    "stripe_id": "",
+    "coupon": null,
+    "discount": 0
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 22,
+  "fields": {
+    "order": 19,
+    "product": 4,
+    "price": "46.00",
+    "quantity": 1
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 23,
+  "fields": {
+    "order": 20,
+    "product": 7,
+    "price": "52.40",
+    "quantity": 1
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 24,
+  "fields": {
+    "order": 20,
+    "product": 3,
+    "price": "25.50",
+    "quantity": 1
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 25,
+  "fields": {
+    "order": 21,
+    "product": 21,
+    "price": "0.58",
+    "quantity": 1
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 26,
+  "fields": {
+    "order": 22,
+    "product": 5,
+    "price": "23.46",
+    "quantity": 1
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 27,
+  "fields": {
+    "order": 22,
+    "product": 3,
+    "price": "25.50",
+    "quantity": 1
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 28,
+  "fields": {
+    "order": 22,
+    "product": 25,
+    "price": "1.20",
+    "quantity": 1
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 29,
+  "fields": {
+    "order": 23,
+    "product": 4,
+    "price": "46.00",
+    "quantity": 2
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 30,
+  "fields": {
+    "order": 23,
+    "product": 21,
+    "price": "0.58",
+    "quantity": 1
+  }
+},
+{
+  "model": "coupons.coupon",
+  "pk": 1,
+  "fields": {
+    "code": "SUMMER",
+    "valid_from": "2024-02-20T16:15:47Z",
+    "valid_to": "2024-02-29T16:15:55Z",
+    "discount": 10,
+    "active": true
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 1,
+  "fields": {
+    "title": "Are metal cooking wares bad?",
+    "slug": "are-metal-cooking-wares-bad",
+    "author": 1,
+    "body": "In the vast world of culinary tools, metal cooking wares have been a staple in kitchens for generations, revered for their durability, efficient heat conduction, and versatility. However, amidst their popularity, a growing discourse questions the safety and health implications of using metal utensils for cooking. This article delves into the concerns, scientific findings, and expert opinions surrounding the use of metal cooking wares to uncover the truth behind the skepticism.\r\n\r\nThe debate over the safety of metal cookware primarily revolves around the potential leaching of metals into food during the cooking process. Certain types of metal cookware, such as aluminum and non-stick pans treated with chemicals, have been at the center of these concerns. Studies have suggested that high amounts of aluminum exposure may be linked to health issues, including neurological effects. Similarly, the breakdown of non-stick coatings at high temperatures can release potentially toxic fumes, raising alarms about their safety.\r\n\r\nOn the other hand, some metals like stainless steel and cast iron are touted for their safety and health benefits. Stainless steel, known for its resistance to corrosion and rust, is considered a safer option as it does not react with food. Meanwhile, cast iron cookware can actually impart beneficial iron into the diet, which is crucial for combating iron deficiency.\r\n\r\nThe manufacturing quality and maintenance of metal cookware also play pivotal roles in their safety. High-quality, well-maintained metal utensils minimize the risk of metal leaching and ensure a longer lifespan, making them a safer choice for everyday cooking. Moreover, adhering to manufacturer guidelines, such as avoiding cooking acidic foods in certain metals that can cause leaching, can mitigate potential risks.\r\n\r\nExperts advocate for a balanced approach when evaluating the use of metal cooking wares. They suggest that while it is essential to be aware of the materials and conditions that could pose health risks, it is equally important not to overlook the benefits that metal cookware brings to the table. The key lies in informed selection, proper care, and using a variety of cookware materials to minimize potential exposure to toxins.\r\n\r\nIn conclusion, the question of whether metal cooking wares are bad does not have a one-size-fits-all answer. While certain types of metal cookware may pose health risks if not used or maintained correctly, others are safe and beneficial under the right conditions. As we navigate through the myriad of options in the market, staying informed and making conscious choices is paramount. By understanding the properties of different metals and adhering to best practices in cookware maintenance, we can harness the benefits of metal cooking wares without compromising our health.",
+    "image": "blog/2024/02/22/are-metal-cooking-wares-bad.jpg",
+    "publish": "2024-02-22T07:49:55Z",
+    "created": "2024-02-22T08:02:28.096Z",
+    "updated": "2024-02-23T18:55:18.238Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 2,
+  "fields": {
+    "title": "Exploring the Far-Reaching Consequences of Excessive Salt Consumption",
+    "slug": "exploring-the-far-reaching-consequences-of-excessive-salt-consumption",
+    "author": 1,
+    "body": "In our daily lives, salt is omnipresent, subtly sprinkling its way into our diets, often far exceeding the recommended daily intake without our conscious awareness. This seemingly innocuous substance, pivotal for human survival, harbors a darker side when consumed in excess. The consequences of eating too much salt stretch far beyond the well-known concerns of hypertension and cardiovascular diseases, permeating various aspects of human health in ways that are less frequently discussed but equally alarming.\r\n\r\nAt the heart of the issue is sodium, a key component of salt, which plays a crucial role in maintaining fluid balance, nerve transmission, and muscle function in the human body. However, when consumed in excess, sodium can disrupt this delicate balance, leading to a cascade of adverse health effects. The most immediate and recognized consequence is the elevation of blood pressure. Over time, the constant pressure on the walls of the arteries weakens them, leading to cardiovascular diseases, including heart attacks and strokes, which remain among the leading causes of death globally.\r\n\r\nBeyond the cardiovascular system, excessive salt intake has been linked to other troubling health issues. For instance, it can lead to kidney damage by making the organs work harder to filter out the extra sodium, potentially resulting in kidney stones or even kidney failure. The bones too are not spared; high salt consumption can lead to calcium loss, increasing the risk of osteoporosis and fractures, particularly in older adults.\r\n\r\nEmerging research has also begun to illuminate the connection between salt and cognitive function. Excessive salt intake has been associated with an increased risk of cognitive decline, potentially due to its impact on blood pressure and the subsequent effect on brain health. Moreover, there is growing evidence to suggest that a high-salt diet may exacerbate autoimmune diseases by influencing the immune response in a manner that promotes inflammation.\r\n\r\nThe implications of excessive salt consumption extend beyond individual health, posing a significant public health challenge. It underscores the need for collective action in reformulating processed foods, which are a major source of dietary sodium, and raising public awareness about the hidden salt content in seemingly innocuous foods. Education on reading nutrition labels and understanding the real content of our meals is crucial in empowering individuals to make healthier dietary choices.\r\n\r\nFurthermore, adopting a diet rich in fruits, vegetables, and whole grains, which are naturally low in sodium, can be a proactive step toward mitigating the risks associated with high salt intake. Simple measures, such as cooking at home and using herbs and spices to flavor food instead of salt, can also make a significant difference in reducing overall consumption.\r\n\r\nIn conclusion, while salt is an indispensable part of our diet, moderation is key to preventing the wide array of health issues associated with its excessive intake. Understanding the far-reaching consequences of eating too much salt is the first step in making informed dietary choices that support long-term health and well-being. As we navigate through the myriad of available food options, it is crucial to remember that our health is often flavored by the choices we make, one pinch of salt at a time.",
+    "image": "blog/2024/02/22/consequences-of-eating-too-much-salt.jpg",
+    "publish": "2024-02-22T08:02:28Z",
+    "created": "2024-02-22T08:05:35.470Z",
+    "updated": "2024-02-23T08:37:06.556Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 3,
+  "fields": {
+    "title": "Flour Foods That You Shouldn't Take Every Day",
+    "slug": "flour-foods-that-you-shouldnt-take-every-day",
+    "author": 1,
+    "body": "In the vast landscape of our daily diets, flour-based foods stand as towering staples, comforting in their familiarity and seemingly indispensable in their culinary versatility. From the crackling crust of a morning toast to the soft embrace of pasta at dinner, flour is omnipresent. Yet, amidst this ubiquity, a growing body of evidence suggests that indulging in certain flour foods on a daily basis could have detrimental effects on our health. This revelation beckons us to explore which flour foods might be best enjoyed in moderation rather than as daily dietary fixtures.\r\n\r\nFirst among the culprits are commercially prepared pastries. These tempting confections, ranging from doughnuts to croissants, are not only high in refined flour but also laden with sugars and trans fats. Their consumption can lead to a spike in blood sugar levels, promoting insulin resistance and increasing the risk of type 2 diabetes over time. Furthermore, the high caloric density of these pastries can contribute to weight gain and obesity, factors known to exacerbate a plethora of health issues.\r\n\r\nWhite bread, another ubiquitous flour food, often undergoes a refining process that strips away the bran and germ, leaving behind the endosperm. This process significantly reduces the fiber, vitamins, and minerals that are naturally present in whole grains. Regular consumption of white bread can lead to nutritional deficiencies and has been linked to a higher risk of obesity and metabolic syndrome. Opting for whole grain alternatives can provide a more nutrient-dense and satisfying option.\r\n\r\nPasta, while a beloved staple in many diets around the globe, typically made from refined flour, presents similar concerns when consumed in excess. Regular intake of refined pasta can contribute to uneven blood sugar levels and, over time, may lead to increased cravings, weight gain, and a heightened risk of chronic diseases. Choosing whole grain pasta or alternatives made from legumes can offer a healthier twist to traditional pasta dishes, providing more fiber and nutrients.\r\n\r\nLastly, pizza, especially the commercially prepared varieties, combines several elements of concern: a refined flour crust, high-fat cheese, and processed meats. This combination can be a recipe for increased calorie intake, saturated fat, and sodium, all of which are factors in the development of heart disease, hypertension, and other health conditions. While making pizza at home with whole grain crust and healthier toppings can mitigate some of these issues, it's still wise to consider pizza a treat rather than a daily meal component.\r\n\r\nUnderstanding the impact of daily consumption of certain flour foods compels us to reconsider our dietary choices. Incorporating a diversity of whole grains and exploring flour alternatives made from nuts, seeds, or legumes can enrich our diets with essential nutrients while reducing the risk of chronic diseases. As with all things, moderation is key. By making informed decisions about the flour foods we choose to consume regularly, we can navigate towards a path of improved health and wellness, proving that sometimes, less really is more.",
+    "image": "blog/2024/02/22/flour-foods-that-you-shouldnt-take-everyday.jpg",
+    "publish": "2024-02-22T08:05:35Z",
+    "created": "2024-02-22T08:07:50.383Z",
+    "updated": "2024-02-23T08:38:17.459Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 4,
+  "fields": {
+    "title": "Health Benefits of Eating Fruits Everyday",
+    "slug": "health-benefits-of-eating-fruits-everyday",
+    "author": 1,
+    "body": "In the tapestry of dietary choices that paint our daily lives, fruits emerge as vibrant threads, weaving benefits that extend far beyond their immediate pleasure. Consuming fruits every day is akin to gifting your body a basket of healthful treasures, each with unique flavors and a plethora of nutritional benefits. This article delves into the myriad ways in which daily fruit consumption can enhance our health, vitality, and overall well-being.\r\n\r\nAt the heart of fruits' benefits is their abundant supply of vitamins and minerals. These nutrients are pivotal for the proper functioning of our body's systems. For instance, vitamin C, found copiously in citrus fruits like oranges and grapefruits, is not only an antioxidant that combats free radicals but also plays a crucial role in skin health and iron absorption. Similarly, potassium, abundant in bananas, helps regulate blood pressure and is essential for heart health and muscle function.\r\n\r\nFruits are also a rich source of dietary fiber, which aids in digestion and contributes to a feeling of fullness, helping to control appetite and weight. Fiber's role extends to the microbiome; it feeds the beneficial gut bacteria, fostering a healthy digestive system that is less prone to inflammation and associated diseases. Moreover, the regular consumption of fiber-rich fruits can reduce the risk of heart disease, type 2 diabetes, and certain types of cancer.\r\n\r\nAnother significant advantage of eating fruits is their low calorie yet high nutrient density. This makes fruits an excellent choice for those looking to maintain or reduce weight without compromising nutritional intake. The natural sugars found in fruits provide a healthier source of energy compared to processed snacks that are high in refined sugars and empty calories.\r\n\r\nThe antioxidants present in fruits, such as flavonoids and carotenoids, offer protection against various conditions. These compounds help neutralize harmful molecules in the body, reducing oxidative stress and lowering the risk of chronic diseases like heart disease, diabetes, and neurological decline. Blueberries, strawberries, and apples are just a few examples of fruits high in these powerful antioxidants.\r\n\r\nHydration is another often-overlooked benefit of fruit consumption. Many fruits have high water content, which can help to meet your daily fluid needs and keep you hydrated. Watermelon, cucumber, and oranges are fruits with high water content, making them perfect for hydration on hot days or after physical activity.\r\n\r\nMoreover, the inclusion of fruits in your daily diet can have positive effects on mental health. Studies have suggested that the nutrients in fruits can improve mood, reduce stress levels, and lower the risk of mental health disorders. The act of eating fruit can also be a mindful practice, encouraging a moment of pause in our otherwise hectic lives.\r\n\r\nIncorporating a variety of fruits into your daily diet ensures that you reap the full spectrum of nutritional benefits they offer. Whether consumed as a snack, blended into a smoothie, or included in meals, the versatility of fruits makes them an enjoyable addition to any diet.\r\n\r\nIn conclusion, the health benefits of eating fruits every day are extensive and impactful. From supporting physical health to enhancing mental well-being, fruits are nature's way of nurturing us. Embracing the habit of daily fruit consumption is a step towards a healthier, more vibrant life.",
+    "image": "blog/2024/02/22/health-benefits-of-eating-fruits-everyday.jpg",
+    "publish": "2024-02-22T08:55:21Z",
+    "created": "2024-02-22T08:57:30.515Z",
+    "updated": "2024-02-23T08:39:17.017Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 5,
+  "fields": {
+    "title": "Why bread is mostly taken during breakfast?",
+    "slug": "why-bread-is-mostly-taken-during-breakfast",
+    "author": 1,
+    "body": "Bread, in its myriad forms, has been a staple in the diet of civilizations across the globe for thousands of years. It's a fundamental part of many cultures' cuisines, versatile and comforting. Among its various roles, bread is most commonly associated with breakfast, the first and arguably most important meal of the day. This phenomenon, far from being a mere coincidence, is rooted in a combination of historical, nutritional, and practical reasons that span cultures and continents.\r\n\r\nHistorically, bread's emergence as a breakfast staple can be traced back to its simplicity and accessibility. In the times before modern appliances and conveniences, bread could be prepared ahead of time and would be ready to eat at the start of the day, providing a quick and satisfying option for families and workers alike. Its long shelf-life, compared to other foods, made bread a reliable choice in times when food scarcity was a real concern. This tradition of starting the day with bread has been carried through generations and remains ingrained in many societies.\r\n\r\nFrom a nutritional standpoint, bread provides essential carbohydrates, the body's primary energy source, making it an ideal candidate for breakfast food. Consuming carbohydrates in the morning helps to replenish the body's glucose levels after a night of fasting, giving an energy boost to start the day. Whole grain and enriched breads also supply a range of vitamins and minerals, including B vitamins, iron, and dietary fiber, which are crucial for maintaining health and aiding in digestion.\r\n\r\nThe practicality of bread also plays a significant role in its prevalence at breakfast tables. Bread is incredibly versatile and can be paired with a variety of toppings to suit different tastes and dietary requirements, from simple butters and jams to more substantial proteins like eggs or cheese. This adaptability makes bread an easy choice for households around the world, catering to the morning rush without compromising on taste or nutrition.\r\n\r\nMoreover, the modern lifestyle has seen the rise of convenience as a key factor in meal choices. Pre-sliced and ready-to-eat forms of bread save time in the morning, a period when many people are pressed for time. The convenience of grabbing a slice of bread, toasting it if preferred, and quickly assembling a nutritious and filling meal aligns perfectly with the fast-paced lives of today's global population.\r\n\r\nCulturally, bread carries a sense of comfort and homeliness, making it a comforting choice to start the day. The smell of toasted bread is often associated with warmth and coziness, invoking a sense of well-being and readiness to face the day ahead. In many cultures, traditional breakfast dishes that incorporate bread have been passed down through generations, further cementing its place in the morning routine.\r\n\r\nIn conclusion, the predominance of bread during breakfast is a multifaceted tradition rooted in historical practices, nutritional benefits, practicality, and cultural significance. Its universal appeal, adaptability, and the comforting start it provides to the day ensure that bread remains a morning favorite in diets around the world. As we continue to embrace new food trends and dietary habits, the simple pleasure of starting the day with bread is a tradition that stands the test of time, bridging past and present in the ritual of breakfast.",
+    "image": "blog/2024/02/22/why-bread-is-mostly-taken-during-breakfast.jpg",
+    "publish": "2024-02-22T09:06:24Z",
+    "created": "2024-02-22T09:09:09.067Z",
+    "updated": "2024-02-23T08:39:43.177Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 1,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "products/2024/02/12/butter-chicken.jpg",
+    "modified": "2024-02-14T09:43:34.351Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 2,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "products/2024/02/13/bananas.jpg",
+    "modified": "2024-02-14T09:43:33.505Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 3,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "products/2024/02/12/chicken-masala.jpg",
+    "modified": "2024-02-14T09:43:33.968Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 4,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "products/2024/02/12/cherries.jpg",
+    "modified": "2024-02-14T09:43:34.708Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 5,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "products/2024/02/12/falafel.jpg",
+    "modified": "2024-02-14T09:43:35.074Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 6,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "products/2024/02/12/carrots.jpg",
+    "modified": "2024-02-14T09:43:35.773Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 7,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "products/2024/02/13/dried-goji.jpg",
+    "modified": "2024-02-14T09:43:36.115Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 8,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "products/2024/02/13/green-onions.jpg",
+    "modified": "2024-02-14T09:43:36.801Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 9,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "products/2024/02/12/chicken-steak.jpg",
+    "modified": "2024-02-15T06:24:55.808Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 10,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "products/2024/02/12/indian-chicken-curry.jpg",
+    "modified": "2024-02-15T19:42:42.478Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 11,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "products/2024/02/12/meat-with-sauce.jpg",
+    "modified": "2024-02-20T22:03:56.640Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 12,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "products/2024/02/13/red-apples.jpg",
+    "modified": "2024-02-21T11:33:02.173Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 13,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "blog/2024/02/22/flour-foods-that-you-shouldnt-take-everyday.jpg",
+    "modified": "2024-02-22T08:43:08.397Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 14,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "blog/2024/02/22/consequences-of-eating-too-much-salt.jpg",
+    "modified": "2024-02-22T08:43:09.004Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 15,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "blog/2024/02/22/are-metal-cooking-wares-bad.jpg",
+    "modified": "2024-02-22T08:43:09.844Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 16,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "blog/2024/02/22/health-benefits-of-eating-fruits-everyday.jpg",
+    "modified": "2024-02-22T08:58:15.712Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 17,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "blog/2024/02/22/why-bread-is-mostly-taken-during-breakfast.jpg",
+    "modified": "2024-02-22T09:09:14.272Z"
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 1,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "products/2024/02/12/butter-chicken.jpg.400x400_q85.jpg",
+    "modified": "2024-02-13T08:59:30.338Z",
+    "source": 1
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 2,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "products/2024/02/12/butter-chicken.jpg.200x200_q85.jpg",
+    "modified": "2024-02-13T09:00:19.131Z",
+    "source": 1
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 3,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "products/2024/02/13/bananas.jpg.50x50_q85_crop.jpg",
+    "modified": "2024-02-14T09:35:52.568Z",
+    "source": 2
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 4,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "products/2024/02/12/chicken-masala.jpg.50x50_q85_crop.jpg",
+    "modified": "2024-02-14T09:35:53.027Z",
+    "source": 3
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 5,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "products/2024/02/12/butter-chicken.jpg.50x50_q85_crop.jpg",
+    "modified": "2024-02-14T09:35:53.418Z",
+    "source": 1
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 6,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "products/2024/02/12/cherries.jpg.50x50_q85_crop.jpg",
+    "modified": "2024-02-14T09:35:53.759Z",
+    "source": 4
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 7,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "products/2024/02/12/falafel.jpg.50x50_q85_crop.jpg",
+    "modified": "2024-02-14T09:35:54.201Z",
+    "source": 5
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 8,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "products/2024/02/12/carrots.jpg.50x50_q85_crop.jpg",
+    "modified": "2024-02-14T09:35:55.010Z",
+    "source": 6
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 9,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "products/2024/02/13/dried-goji.jpg.50x50_q85_crop.jpg",
+    "modified": "2024-02-14T09:35:55.377Z",
+    "source": 7
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 10,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "products/2024/02/13/green-onions.jpg.50x50_q85_crop.jpg",
+    "modified": "2024-02-14T09:35:56.052Z",
+    "source": 8
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 11,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "products/2024/02/13/bananas.jpg.60x60_q85_crop.jpg",
+    "modified": "2024-02-14T09:43:33.597Z",
+    "source": 2
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 12,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "products/2024/02/12/chicken-masala.jpg.60x60_q85_crop.jpg",
+    "modified": "2024-02-14T09:43:34.080Z",
+    "source": 3
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 13,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "products/2024/02/12/butter-chicken.jpg.60x60_q85_crop.jpg",
+    "modified": "2024-02-14T09:43:34.447Z",
+    "source": 1
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 14,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "products/2024/02/12/cherries.jpg.60x60_q85_crop.jpg",
+    "modified": "2024-02-14T09:43:34.814Z",
+    "source": 4
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 15,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "products/2024/02/12/falafel.jpg.60x60_q85_crop.jpg",
+    "modified": "2024-02-14T09:43:35.172Z",
+    "source": 5
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 16,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "products/2024/02/12/carrots.jpg.60x60_q85_crop.jpg",
+    "modified": "2024-02-14T09:43:35.889Z",
+    "source": 6
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 17,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "products/2024/02/13/dried-goji.jpg.60x60_q85_crop.jpg",
+    "modified": "2024-02-14T09:43:36.188Z",
+    "source": 7
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 18,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "products/2024/02/13/green-onions.jpg.60x60_q85_crop.jpg",
+    "modified": "2024-02-14T09:43:36.871Z",
+    "source": 8
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 19,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "products/2024/02/12/chicken-steak.jpg.60x60_q85_crop.jpg",
+    "modified": "2024-02-15T06:24:55.934Z",
+    "source": 9
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 20,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "products/2024/02/12/indian-chicken-curry.jpg.60x60_q85_crop.jpg",
+    "modified": "2024-02-15T19:42:42.589Z",
+    "source": 10
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 21,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "products/2024/02/12/meat-with-sauce.jpg.60x60_q85_crop.jpg",
+    "modified": "2024-02-20T22:03:56.780Z",
+    "source": 11
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 22,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "products/2024/02/13/red-apples.jpg.60x60_q85_crop.jpg",
+    "modified": "2024-02-21T11:33:02.318Z",
+    "source": 12
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 23,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "blog/2024/02/22/flour-foods-that-you-shouldnt-take-everyday.jpg.60x60_q85_crop.jpg",
+    "modified": "2024-02-22T08:23:55.892Z",
+    "source": 13
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 24,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "blog/2024/02/22/consequences-of-eating-too-much-salt.jpg.60x60_q85_crop.jpg",
+    "modified": "2024-02-22T08:23:56.559Z",
+    "source": 14
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 25,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "blog/2024/02/22/are-metal-cooking-wares-bad.jpg.60x60_q85_crop.jpg",
+    "modified": "2024-02-22T08:23:57.392Z",
+    "source": 15
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 26,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "blog/2024/02/22/flour-foods-that-you-shouldnt-take-everyday.jpg.360x360_q85_crop.jpg",
+    "modified": "2024-02-22T08:43:08.509Z",
+    "source": 13
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 27,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "blog/2024/02/22/consequences-of-eating-too-much-salt.jpg.360x360_q85_crop.jpg",
+    "modified": "2024-02-22T08:43:09.101Z",
+    "source": 14
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 28,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "blog/2024/02/22/are-metal-cooking-wares-bad.jpg.360x360_q85_crop.jpg",
+    "modified": "2024-02-22T08:43:09.934Z",
+    "source": 15
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 29,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "blog/2024/02/22/health-benefits-of-eating-fruits-everyday.jpg.60x60_q85_crop.jpg",
+    "modified": "2024-02-22T08:58:15.300Z",
+    "source": 16
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 30,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "blog/2024/02/22/health-benefits-of-eating-fruits-everyday.jpg.360x360_q85_crop.jpg",
+    "modified": "2024-02-22T08:58:15.791Z",
+    "source": 16
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 31,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "blog/2024/02/22/why-bread-is-mostly-taken-during-breakfast.jpg.60x60_q85_crop.jpg",
+    "modified": "2024-02-22T09:09:14.080Z",
+    "source": 17
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 32,
+  "fields": {
+    "storage_hash": "d26becbf46ac48eda79c7a39a13a02dd",
+    "name": "blog/2024/02/22/why-bread-is-mostly-taken-during-breakfast.jpg.360x360_q85_crop.jpg",
+    "modified": "2024-02-22T09:09:14.355Z",
+    "source": 17
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 4,
+  "fields": {
+    "name": "Kitchen Tools",
+    "slug": "kitchen-tools"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 5,
+  "fields": {
+    "name": "Cooking",
+    "slug": "cooking"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 6,
+  "fields": {
+    "name": "Health",
+    "slug": "health"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 7,
+  "fields": {
+    "name": "Metal Wares",
+    "slug": "metal-wares"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 8,
+  "fields": {
+    "name": "Diet",
+    "slug": "diet"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 9,
+  "fields": {
+    "name": "Salt",
+    "slug": "salt"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 10,
+  "fields": {
+    "name": "Nutrition",
+    "slug": "nutrition"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 11,
+  "fields": {
+    "name": "Flour",
+    "slug": "flour"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 13,
+  "fields": {
+    "name": "Fruits",
+    "slug": "fruits"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 14,
+  "fields": {
+    "name": "Breakfast",
+    "slug": "breakfast"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 15,
+  "fields": {
+    "name": "Bread",
+    "slug": "bread"
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 8,
+  "fields": {
+    "tag": 8,
+    "content_type": 16,
+    "object_id": 2
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 9,
+  "fields": {
+    "tag": 9,
+    "content_type": 16,
+    "object_id": 2
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 10,
+  "fields": {
+    "tag": 10,
+    "content_type": 16,
+    "object_id": 2
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 11,
+  "fields": {
+    "tag": 6,
+    "content_type": 16,
+    "object_id": 2
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 12,
+  "fields": {
+    "tag": 10,
+    "content_type": 16,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 13,
+  "fields": {
+    "tag": 11,
+    "content_type": 16,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 15,
+  "fields": {
+    "tag": 6,
+    "content_type": 16,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 16,
+  "fields": {
+    "tag": 8,
+    "content_type": 16,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 17,
+  "fields": {
+    "tag": 8,
+    "content_type": 16,
+    "object_id": 4
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 18,
+  "fields": {
+    "tag": 10,
+    "content_type": 16,
+    "object_id": 4
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 19,
+  "fields": {
+    "tag": 13,
+    "content_type": 16,
+    "object_id": 4
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 20,
+  "fields": {
+    "tag": 6,
+    "content_type": 16,
+    "object_id": 4
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 21,
+  "fields": {
+    "tag": 8,
+    "content_type": 16,
+    "object_id": 5
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 22,
+  "fields": {
+    "tag": 10,
+    "content_type": 16,
+    "object_id": 5
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 23,
+  "fields": {
+    "tag": 14,
+    "content_type": 16,
+    "object_id": 5
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 24,
+  "fields": {
+    "tag": 15,
+    "content_type": 16,
+    "object_id": 5
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 26,
+  "fields": {
+    "tag": 4,
+    "content_type": 16,
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 27,
+  "fields": {
+    "tag": 5,
+    "content_type": 16,
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 28,
+  "fields": {
+    "tag": 6,
+    "content_type": 16,
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 29,
+  "fields": {
+    "tag": 7,
+    "content_type": 16,
+    "object_id": 1
+  }
+}
+]
