@@ -20,5 +20,10 @@ urlpatterns = [
         route='<int:id>/<slug:slug>/',
         view=views.product_detail,
         name='product_detail'
+    ),
+    path(
+        route='products/search/',
+        view=views.product_search,
+        name='product_search'
     )
 ]

@@ -1,10 +1,12 @@
 from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator
+from django.contrib.postgres.search import SearchVector, SearchQuery, SearchRank
 
 from .models import Category, Product
 from cart.forms import CartAddProductForm
 from .recommender import Recommender
 from blog.models import Post
+from .forms import SearchForm
 
 # Create your views here.
 
@@ -18,6 +20,33 @@ def index(request):
         context={
             'section': 'home',
             'posts': posts
+        }
+    )
+
+
+def product_search(request):
+    results = []
+
+    if 'query' in request.GET:
+        form = SearchForm(request.GET)
+
+        if form.is_valid():
+            query = form.cleaned_data['query']
+            search_vector = SearchVector(
+                'name', 'description', 'category__name'
+            )
+            search_query = SearchQuery(query)
+            results = Product.objects.annotate(
+                search=search_vector,
+                rank=SearchRank(search_vector, search_query)
+            ).filter(search=search_query).order_by('-rank')
+
+    return render(
+        request=request,
+        template_name='shop/product/search.html',
+        context={
+            'results': results,
+            'section': 'shop'
         }
     )
 
