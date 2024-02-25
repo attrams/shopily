@@ -44,13 +44,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # custom apps
-    'shop.apps.ShopConfig',
-    'cart.apps.CartConfig',
-    'orders.apps.OrdersConfig',
-    'payment.apps.PaymentConfig',
-    'coupons.apps.CouponsConfig',
-    'blog.apps.BlogConfig',
-    'accounts.apps.AccountsConfig',
+    'shop',
+    'cart',
+    'orders',
+    'payment',
+    'coupons',
+    'blog',
+    'accounts',
 
     # installed apps
     'easy_thumbnails',
@@ -170,3 +170,6 @@ STRIPE_WEBHOOK_SECRET = os.getenv('STRIPE_WEBHOOK_SECRET')
 REDIS_HOST = os.getenv('REDIS_HOST')
 REDIS_PORT = os.getenv('REDIS_PORT')
 REDIS_DB = os.getenv('REDIS_DB')
+
+# custom user model
+AUTH_USER_MODEL = "accounts.User"
