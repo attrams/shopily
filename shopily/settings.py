@@ -173,3 +173,9 @@ REDIS_DB = os.getenv('REDIS_DB')
 
 # custom user model
 AUTH_USER_MODEL = "accounts.User"
+
+# custom authentication
+AUTHENTICATION_BACKENDS = [
+    'accounts.authentication.EmailOrUsernameAuthBackend',
+    'django.contrib.auth.backends.ModelBackend',
+]
