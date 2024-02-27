@@ -12,23 +12,6 @@ $(document).ready(function () {
 
   (function ($) {
     /*------------------
-        Preloader
-    --------------------*/
-    $(window).on('load', function () {
-      /*------------------
-            Gallery filter
-        --------------------*/
-      $('.featured__controls li').on('click', function () {
-        $('.featured__controls li').removeClass('active');
-        $(this).addClass('active');
-      });
-      if ($('.featured__filter').length > 0) {
-        var containerEl = document.querySelector('.featured__filter');
-        var mixer = mixitup(containerEl);
-      }
-    });
-
-    /*------------------
         Background Set
     --------------------*/
     $('.set-bg').each(function () {
@@ -58,111 +41,6 @@ $(document).ready(function () {
       prependTo: '#mobile-menu-wrap',
       allowParentLinks: true,
     });
-
-    /*-----------------------
-        Categories Slider
-    ------------------------*/
-    $('.categories__slider').owlCarousel({
-      loop: true,
-      margin: 0,
-      items: 4,
-      dots: false,
-      nav: true,
-      navText: [
-        "<span class='fa fa-angle-left'><span/>",
-        "<span class='fa fa-angle-right'><span/>",
-      ],
-      animateOut: 'fadeOut',
-      animateIn: 'fadeIn',
-      smartSpeed: 1200,
-      autoHeight: false,
-      autoplay: true,
-      responsive: {
-        0: {
-          items: 1,
-        },
-
-        480: {
-          items: 2,
-        },
-
-        768: {
-          items: 3,
-        },
-
-        992: {
-          items: 4,
-        },
-      },
-    });
-
-    $('.hero__categories__all').on('click', function () {
-      $('.hero__categories ul').slideToggle(400);
-    });
-
-    /*-----------------------------
-        Product Discount Slider
-    -------------------------------*/
-    $('.product__discount__slider').owlCarousel({
-      loop: true,
-      margin: 0,
-      items: 3,
-      dots: true,
-      smartSpeed: 1200,
-      autoHeight: false,
-      autoplay: true,
-      responsive: {
-        320: {
-          items: 1,
-        },
-
-        480: {
-          items: 2,
-        },
-
-        768: {
-          items: 2,
-        },
-
-        992: {
-          items: 3,
-        },
-      },
-    });
-
-    /*---------------------------------
-        Product Details Pic Slider
-    ----------------------------------*/
-    $('.product__details__pic__slider').owlCarousel({
-      loop: true,
-      margin: 20,
-      items: 4,
-      dots: true,
-      smartSpeed: 1200,
-      autoHeight: false,
-      autoplay: true,
-    });
-
-    /*-----------------------
-		Price Range Slider
-	------------------------ */
-    var rangeSlider = $('.price-range'),
-      minamount = $('#minamount'),
-      maxamount = $('#maxamount'),
-      minPrice = rangeSlider.data('min'),
-      maxPrice = rangeSlider.data('max');
-    rangeSlider.slider({
-      range: true,
-      min: minPrice,
-      max: maxPrice,
-      values: [minPrice, maxPrice],
-      slide: function (event, ui) {
-        minamount.val('$' + ui.values[0]);
-        maxamount.val('$' + ui.values[1]);
-      },
-    });
-    minamount.val('$' + rangeSlider.slider('values', 0));
-    maxamount.val('$' + rangeSlider.slider('values', 1));
 
     /*--------------------------
         Select
@@ -233,29 +111,38 @@ $(document).ready(function () {
     /* ---------------------------
     Modal Apply button pressed
   ------------------------------ */
-    $('.modal-footer .btn-custom').click(function () {
+    $('.modal-footer .btn-apply').click(function () {
       // Get the value from the input field
       var couponCode = $('#modalInputContent').val();
 
-      // Perform an AJAX request (example using the POST method)
-      $.ajax({
-        url: '/apply-coupon/', // Your endpoint here
-        type: 'POST',
+      if (couponCode) {
+        const csrftoken = Cookies.get('csrftoken');
+        var url = '/coupons/apply/';
 
-        data: {
-          code: couponCode, // Make sure this matches what your endpoint expects
-        },
-        success: function (response) {
-          // Handle success. For example, you could display a success message.
-          console.log('Coupon applied successfully:', response);
-          // Optionally close the modal after applying the coupon
-          $('#modalCenter').modal('hide');
-        },
-        error: function (xhr, status, error) {
-          // Handle error. For example, display an error message.
-          console.error('Error applying coupon:', error);
-        },
-      });
+        var options = {
+          method: 'POST',
+          headers: {
+            'X-CSRFToken': csrftoken,
+            'X-Requested-With': 'XMLHttpRequest',
+          },
+          mode: 'same-origin',
+        };
+
+        var formData = new FormData();
+        formData.append('code', couponCode);
+        options['body'] = formData;
+
+        // send HTTP request
+        fetch(url, options)
+          .then((response) => response.json())
+          .then((data) => {
+            if (data['redirect']) {
+              window.location.href = data['redirect_url'];
+            }
+            // Optionally close the modal after applying the coupon
+            $('#modalCenter').modal('hide');
+          });
+      }
     });
 
     /*----------------------------
@@ -340,11 +227,35 @@ $(document).ready(function () {
               // update subtotal
               $('#cart-subtotal').text(`$${data['cartSubtotalPrice']}`);
 
+              // update discount
+              $('#cart-discount').text(`- $${data['cartDiscount']}`);
+
               // update total
               $('#cart-total').text(`$${data['cartTotalPrice']}`);
             }
           });
       }
+    });
+
+    /* ----------------------------
+       Toggle password visibility
+       ---------------------------- */
+    $('#togglePassword').click(function () {
+      const password = $('#password');
+      const type = password.attr('type') === 'password' ? 'text' : 'password';
+      password.attr('type', type);
+
+      // toggle the eye/eye-slash icon
+      $(this).toggleClass('fa-eye fa-eye-slash');
+    });
+
+    /* ---------------------------------------------------------
+        Hide login input errors when user starts typing
+       --------------------------------------------------------- */
+
+    $('#user-login input').on('input', function () {
+      // Find the closest parent container (e.g., '.form-group') and search for the '.error' within it and hide
+      $(this).closest('.form-group').find('.error').hide();
     });
   })(jQuery);
 });
