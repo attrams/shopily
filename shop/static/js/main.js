@@ -244,20 +244,32 @@ $(document).ready(function () {
     /* ----------------------------
        Toggle password visibility
        ---------------------------- */
-    $('#togglePassword').click(function () {
-      const password = $('#password');
-      const type = password.attr('type') === 'password' ? 'text' : 'password';
-      password.attr('type', type);
+    $('.password-toggle').click(function () {
+      // find the password input field in the same input group as the clicked toggle icon
+      var input = $(this).closest('.input-group').find('.password-field');
 
-      // toggle the eye/eye-slash icon
-      $(this).toggleClass('fa-eye fa-eye-slash');
+      if (input.attr('type') === 'password') {
+        input.attr('type', 'text');
+        $(this).removeClass('fa-eye').addClass('fa-eye-slash');
+      } else {
+        input.attr('type', 'password');
+        $(this).removeClass('fa-eye-slash').addClass('fa-eye');
+      }
     });
 
     /* ---------------------------------------------------------
         Hide login input errors when user starts typing
        --------------------------------------------------------- */
 
-    $('#user-login input').on('input', function () {
+    $('#user-login-form input').on('input', function () {
+      // Find the closest parent container (e.g., '.form-group') and search for the '.error' within it and hide
+      $(this).closest('.form-group').find('.error').hide();
+    });
+    /* ---------------------------------------------------------
+        Hide sign up input errors when user starts typing
+       --------------------------------------------------------- */
+
+    $('#user-signup-form input').on('input', function () {
       // Find the closest parent container (e.g., '.form-group') and search for the '.error' within it and hide
       $(this).closest('.form-group').find('.error').hide();
     });
