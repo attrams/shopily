@@ -1,3 +1,5 @@
+'use strict';
+
 $(document).ready(function () {
   /*  ---------------------------------------------------
     Template Name: Ogani
@@ -7,8 +9,6 @@ $(document).ready(function () {
     Version: 1.0
     Created: Colorlib
 ---------------------------------------------------------  */
-
-  ('use strict');
 
   (function ($) {
     /*------------------
@@ -46,6 +46,10 @@ $(document).ready(function () {
         Select
     ----------------------------*/
     $('select').niceSelect();
+
+    $('.hero__categories__all').on('click', function () {
+      $('.hero__categories ul').slideToggle(400);
+    });
 
     /*------------------
 		Single Product
@@ -256,6 +260,14 @@ $(document).ready(function () {
     $('#user-login input').on('input', function () {
       // Find the closest parent container (e.g., '.form-group') and search for the '.error' within it and hide
       $(this).closest('.form-group').find('.error').hide();
+    });
+
+    /* ------------------
+        User Logout
+      -------------------- */
+    $('.logoutFormLink').click(function (event) {
+      event.preventDefault(); // Prevent the default link action
+      $(this).closest('form').submit(); // finds the nearest parent form and submits it
     });
   })(jQuery);
 });
