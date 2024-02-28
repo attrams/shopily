@@ -124,9 +124,6 @@ def activate(request, uidb64, token):
 
 
 def forgot_password(request):
-    if request.user.is_authenticated:
-        return redirect('shop:index')
-
     User = get_user_model()
 
     if request.method == 'POST':
