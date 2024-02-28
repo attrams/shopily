@@ -291,9 +291,10 @@ $(document).ready(function () {
     /* ------------------
         User Logout
       -------------------- */
-    $('.logoutFormLink').click(function (event) {
-      event.preventDefault(); // Prevent the default link action
-      $(this).closest('form').submit(); // finds the nearest parent form and submits it
+    // Listen for clicks on any element with the logoutFormLink class
+    $('body').on('click', '.logoutFormLink', function (event) {
+      event.preventDefault(); // Prevent the default link behavior
+      $('.logoutForm').submit(); // Submit the logout form
     });
   })(jQuery);
 });

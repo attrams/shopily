@@ -431,6 +431,10 @@ ol {
   margin-right: 6px;
 }
 
+.pointer-cursor {
+  cursor: pointer;
+}
+
 .header__logo {
   padding: 15px 0;
 }
