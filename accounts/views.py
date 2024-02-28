@@ -18,7 +18,8 @@ from .tasks import send_confirmation_email, send_password_reset
 
 def login_view(request):
     if request.user.is_authenticated:
-        return redirect('shop:index')
+        next_url = request.GET.get('next', 'shop:index')
+        return redirect(next_url)
 
     if request.method == 'POST':
         form = LoginForm(data=request.POST)
@@ -35,7 +36,10 @@ def login_view(request):
                 if user.is_active:
                     login(request, user)
 
-                    return redirect('shop:index')
+                    # Redirect to the 'next' parameter if it exists, else default to 'shop:index'
+                    next_url = request.POST.get(
+                        'next') or request.GET.get('next', 'shop:index')
+                    return redirect(next_url)
 
                 else:
                     messages.info(
@@ -52,7 +56,7 @@ def login_view(request):
     else:
         form = LoginForm()
 
-    return render(request, 'accounts/login.html', {'form': form})
+    return render(request, 'accounts/login.html', {'form': form, 'next': request.GET.get('next', '')})
 
 
 @require_POST

@@ -11,6 +11,7 @@
 
 {% block content %}
     <form method="post" id="user-login-form">
+        <input type="hidden" name="next" value="{{ request.GET.next }}">
         <div class="form-group">
             <label for="{{ form.username.id_for_label }}">Username or Email</label>
             <input type="text"
