@@ -274,6 +274,20 @@ $(document).ready(function () {
       $(this).closest('.form-group').find('.error').hide();
     });
 
+    /* ---------------------------------------------------------
+        Hide forgot password input errors when user starts typing
+       --------------------------------------------------------- */
+
+    $('#forgot-password-form input').on('input', function () {
+      // Find the closest parent container (e.g., '.form-group') and search for the '.error' within it and hide
+      $(this).closest('.form-group').find('.error').hide();
+    });
+
+    $('#set-new-password-form input').on('input', function () {
+      // Find the closest parent container (e.g., '.form-group') and search for the '.error' within it and hide
+      $(this).closest('.form-group').find('.error').hide();
+    });
+
     /* ------------------
         User Logout
       -------------------- */

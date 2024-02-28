@@ -22,3 +22,22 @@ def send_confirmation_email(user_id, message):
     )
 
     return mail_sent
+
+
+@shared_task
+def send_password_reset(user_id, message):
+    '''
+    Task to send email confirmation link when an account is created.
+    '''
+    user = User.objects.get(pk=user_id)
+    subject = 'Password Reset Request'
+
+    mail_sent = send_mail(
+        subject=subject,
+        message=message,
+        from_email='admin@shopily.com',
+        recipient_list=[user.email],
+        fail_silently=False
+    )
+
+    return mail_sent

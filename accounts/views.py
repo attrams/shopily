@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, HttpResponse
 from django.contrib.auth import login, authenticate, logout
 from django.views.decorators.http import require_POST
 from django.contrib.sites.shortcuts import get_current_site
@@ -8,14 +8,18 @@ from django.utils.encoding import force_bytes, force_str
 from django.contrib.auth.tokens import default_token_generator
 from django.contrib.auth import get_user_model
 from django.contrib import messages
+from django.contrib.auth.forms import SetPasswordForm
 
-from .forms import SignUpForm, LoginForm
-from .tasks import send_confirmation_email
+from .forms import SignUpForm, LoginForm, PasswordResetRequestForm
+from .tasks import send_confirmation_email, send_password_reset
 
 # Create your views here.
 
 
 def login_view(request):
+    if request.user.is_authenticated:
+        return redirect('shop:index')
+
     if request.method == 'POST':
         form = LoginForm(data=request.POST)
 
@@ -117,3 +121,130 @@ def activate(request, uidb64, token):
         )
 
         return redirect('accounts:login')
+
+
+def forgot_password(request):
+    if request.user.is_authenticated:
+        return redirect('shop:index')
+
+    User = get_user_model()
+
+    if request.method == 'POST':
+        form = PasswordResetRequestForm(request.POST)
+
+        if form.is_valid():
+            email = form.cleaned_data['email']
+
+            try:
+                user = User.objects.get(email=email)
+
+                current_site = get_current_site(request)
+
+                message = render_to_string('accounts/password_reset_email.html', {
+                    'user': user,
+                    'domain': current_site.domain,
+                    'site_name': 'shopily',
+                    'uid': urlsafe_base64_encode(force_bytes(user.pk)),
+                    'token': default_token_generator.make_token(user)
+                })
+
+                if user.is_active:
+
+                    send_password_reset.delay(user.pk, message)
+
+                    messages.success(
+                        request=request,
+                        message='Password reset instructions sent. Please check your email.'
+                    )
+
+                else:
+                    messages.error(
+                        request=request,
+                        message='Your account is inactive. Please contact support.'
+                    )
+
+            except User.DoesNotExist:
+                messages.info(
+                    request=request,
+                    message='No user is associated with this email address.'
+                )
+
+    else:
+        form = PasswordResetRequestForm()
+
+    return render(request, 'accounts/forgot_password.html', {'form': form})
+
+
+def password_reset(request, uidb64, token):
+    '''
+    This allows users who forgot their password to change their password.
+    '''
+
+    if request.user.is_authenticated:
+        return redirect('shop:index')
+
+    User = get_user_model()
+
+    try:
+        uid = force_str(urlsafe_base64_decode(uidb64))
+        user = User.objects.get(pk=uid)
+
+    except (TypeError, ValueError, OverflowError, User.DoesNotExist):
+        user = None
+
+    if user is None:
+        messages.error(
+            request=request,
+            message='It looks like your account got deleted. Please create a new one.'
+        )
+        return redirect('accounts:signup')
+
+    if request.method == 'POST':
+        # process the password reset form submission
+        form = SetPasswordForm(user, request.POST)
+
+        # prevent inactive users from resetting password
+        if form.is_valid():
+
+            if user.is_active:
+                new_password = form.cleaned_data['new_password1']
+
+                # check if new password is not the same as the old password
+                if user.check_password(new_password):
+                    messages.error(
+                        request=request,
+                        message='Your new password cannot be the same as your old password.'
+                    )
+                    return render(request, 'accounts/password_reset.html', {'form': form})
+
+                form.save()
+                messages.success(
+                    request=request,
+                    message='Your password has been reset successfully. You can now log in with your new password.'
+                )
+
+            else:
+                messages.error(
+                    request=request,
+                    message='Password reset failed because your account is inactive. Please contact support.'
+                )
+
+            return redirect('accounts:login')
+
+        else:
+            return render(request, 'accounts/password_reset.html', {'form': form})
+
+    elif request.method == 'GET':
+        if user is not None and default_token_generator.check_token(user, token):
+            # A form that lets a user change their password without entering the old password.
+            form = SetPasswordForm(user)
+
+            return render(request, 'accounts/password_reset.html', {'form': form})
+
+        else:
+            messages.error(
+                request=request,
+                message='The password reset link is invalid or expired. Please request a new one.'
+            )
+
+            return redirect('accounts:forgot_password')

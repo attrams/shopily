@@ -34,7 +34,7 @@
             </div>
             {% if form.password.errors %}<div class="error">{{ form.password.errors.as_text }}</div>{% endif %}
         </div>
-        <a href="#" class="text-primary">Forgot Password?</a>
+        <a href="{% url "accounts:forgot_password" %}" class="text-primary">Forgot Password?</a>
         <div class="mt-3">
             <button type="submit" class="btn btn-primary btn-block">Login</button>
         </div>
