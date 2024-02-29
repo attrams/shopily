@@ -100,24 +100,24 @@ $(document).ready(function () {
     /* -----------------------
     Modal Autofocus
   -------------------------- */
-    $('#modalCenter').on('shown.bs.modal', function () {
-      $('#modalInputContent').trigger('focus');
+    $('#applyCouponModal').on('shown.bs.modal', function () {
+      $('#couponInput').trigger('focus');
     });
 
     /* -----------------------
     Modal Reset
   -------------------------- */
-    $('#modalCenter').on('hidden.bs.modal', function () {
+    $('#applyCouponModal').on('hidden.bs.modal', function () {
       // clear input field when closed
-      $('#modalInputContent').val('');
+      $('#couponInput').val('');
     });
 
     /* ---------------------------
     Modal Apply button pressed
   ------------------------------ */
-    $('.modal-footer .btn-apply').click(function () {
+    $('#applyCouponModal .modal-footer .btn-apply').click(function () {
       // Get the value from the input field
-      var couponCode = $('#modalInputContent').val();
+      var couponCode = $('#couponInput').val();
 
       if (couponCode) {
         const csrftoken = Cookies.get('csrftoken');
