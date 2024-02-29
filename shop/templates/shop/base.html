@@ -88,17 +88,24 @@
             </div>
             <div class="humberger__menu__widget">
                 <div class="header__top__right__language">
-                    <img src="{% static "img/language.png" %}" alt="">
-                    <div>English</div>
-                    <span class="arrow_carrot-down"></span>
-                    <ul>
-                        <li>
-                            <a href="#">Spanish</a>
-                        </li>
-                        <li>
-                            <a href="#">English</a>
-                        </li>
-                    </ul>
+                    <div class="dropdown">
+                        <span class="dropdown-toggle"
+                              role="button"
+                              id="dropdownMenuLink"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                              tabindex="0">Language</span>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">
+                                <img src="{% static "img/english_flag.png" %}" alt="English" />
+                            English</a>
+                            <a class="dropdown-item" href="#">
+                                <img src="{% static "img/spanish_flag.png" %}" alt="Spanish" />
+                            Spanish</a>
+                            <!-- Add more languages and their images here -->
+                        </div>
+                    </div>
                 </div>
                 <div class="header__top__right__auth">
                     {% if request.user.is_authenticated %}
@@ -112,6 +119,7 @@
                             </span>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" href="">Edit Account</a>
+                                <a class="dropdown-item" href="">Change Password</a>
                                 <a class="dropdown-item" href="{% url "accounts:forgot_password" %}">Reset Password</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item logoutFormLink" href="#">Logout</a>
@@ -173,17 +181,24 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="header__top__right">
                                 <div class="header__top__right__language">
-                                    <img src="{% static "img/language.png" %}" alt="">
-                                    <div>English</div>
-                                    <span class="arrow_carrot-down"></span>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Spanish</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">English</a>
-                                        </li>
-                                    </ul>
+                                    <div class="dropdown">
+                                        <span class="dropdown-toggle"
+                                              role="button"
+                                              id="dropdownMenuLink"
+                                              data-toggle="dropdown"
+                                              aria-haspopup="true"
+                                              aria-expanded="false"
+                                              tabindex="0">Language</span>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#">
+                                                <img src="{% static "img/english_flag.png" %}" alt="English" />
+                                            English</a>
+                                            <a class="dropdown-item" href="#">
+                                                <img src="{% static "img/spanish_flag.png" %}" alt="Spanish" />
+                                            Spanish</a>
+                                            <!-- Add more languages and their images here -->
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="header__top__right__auth">
                                     {% if request.user.is_authenticated %}
@@ -197,6 +212,7 @@
                                             </span>
                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                 <a class="dropdown-item" href="">Edit Account</a>
+                                                <a class="dropdown-item" href="">Change Password</a>
                                                 <a class="dropdown-item" href="{% url "accounts:forgot_password" %}">Reset Password</a>
                                                 <div class="dropdown-divider"></div>
                                                 <a class="dropdown-item logoutFormLink" href="#">Logout</a>
