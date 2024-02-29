@@ -131,7 +131,7 @@
                             {% csrf_token %}
                         </form>
                     {% else %}
-                        <a href="{% url "accounts:login" %}"><i class="fa fa-user"></i> Login</a>
+                        <a href="{% url "accounts:login" %}" class="text-reset"><i class="fa fa-user"></i> Login</a>
                     {% endif %}
                 </div>
             </div>
@@ -224,7 +224,7 @@
                                             {% csrf_token %}
                                         </form>
                                     {% else %}
-                                        <a href="{% url "accounts:login" %}"><i class="fa fa-user"></i> Login</a>
+                                        <a href="{% url "accounts:login" %}" class="text-reset"><i class="fa fa-user"></i> Login</a>
                                     {% endif %}
                                 </div>
                             </div>

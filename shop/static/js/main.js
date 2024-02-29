@@ -258,32 +258,13 @@ $(document).ready(function () {
     });
 
     /* ---------------------------------------------------------
-        Hide login input errors when user starts typing
-       --------------------------------------------------------- */
+    Hide input errors on various forms when user starts typing.
+    Note: These forms are expected to be on different pages.
+   --------------------------------------------------------- */
 
-    $('#user-login-form input').on('input', function () {
-      // Find the closest parent container (e.g., '.form-group') and search for the '.error' within it and hide
-      $(this).closest('.form-group').find('.error').hide();
-    });
-    /* ---------------------------------------------------------
-        Hide sign up input errors when user starts typing
-       --------------------------------------------------------- */
-
-    $('#user-signup-form input').on('input', function () {
-      // Find the closest parent container (e.g., '.form-group') and search for the '.error' within it and hide
-      $(this).closest('.form-group').find('.error').hide();
-    });
-
-    /* ---------------------------------------------------------
-        Hide forgot password input errors when user starts typing
-       --------------------------------------------------------- */
-
-    $('#forgot-password-form input').on('input', function () {
-      // Find the closest parent container (e.g., '.form-group') and search for the '.error' within it and hide
-      $(this).closest('.form-group').find('.error').hide();
-    });
-
-    $('#set-new-password-form input').on('input', function () {
+    $(
+      '#user-login-form input, #user-signup-form input, #forgot-password-form input, #set-new-password-form input'
+    ).on('input', function () {
       // Find the closest parent container (e.g., '.form-group') and search for the '.error' within it and hide
       $(this).closest('.form-group').find('.error').hide();
     });
