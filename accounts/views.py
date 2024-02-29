@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, HttpResponse
-from django.contrib.auth import login, authenticate, logout
+from django.contrib.auth import login, authenticate, logout, update_session_auth_hash
 from django.views.decorators.http import require_POST
 from django.contrib.sites.shortcuts import get_current_site
 from django.template.loader import render_to_string
@@ -8,7 +8,8 @@ from django.utils.encoding import force_bytes, force_str
 from django.contrib.auth.tokens import default_token_generator
 from django.contrib.auth import get_user_model
 from django.contrib import messages
-from django.contrib.auth.forms import SetPasswordForm
+from django.contrib.auth.forms import SetPasswordForm, PasswordChangeForm
+from django.contrib.auth.decorators import login_required
 
 from .forms import SignUpForm, LoginForm, PasswordResetRequestForm
 from .tasks import send_confirmation_email, send_password_reset
@@ -249,3 +250,40 @@ def password_reset(request, uidb64, token):
             )
 
             return redirect('accounts:forgot_password')
+
+
+@login_required
+def change_password(request):
+    if request.method == 'POST':
+        form = PasswordChangeForm(user=request.user, data=request.POST)
+
+        if form.is_valid():
+            new_password = form.cleaned_data['new_password1']
+
+            # check if new password is not the same as the old password
+            if request.user.check_password(new_password):
+                messages.error(
+                    request=request,
+                    message='Your new password cannot be the same as your old password.'
+                )
+                return render(request, 'accounts/change_password.html', {'form': form})
+
+            user = form.save()
+            # Important to keep the user logged in after changing their password
+            update_session_auth_hash(request, user)
+            return redirect('shop:index')
+
+        else:
+            messages.error(
+                request=request,
+                message='Please correct the errors below.'
+            )
+
+    else:
+        form = PasswordChangeForm(user=request.user)
+
+    return render(
+        request=request,
+        template_name='accounts/change_password.html',
+        context={'form': form}
+    )
