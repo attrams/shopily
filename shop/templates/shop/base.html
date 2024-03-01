@@ -143,9 +143,6 @@
                     <li {% if section == 'blog' or section == 'blog_detail' %}class="active"{% endif %}>
                         <a href="{% url "blog:post_list" %}">Blog</a>
                     </li>
-                    <li {% if section == 'contact' %}class="active"{% endif %}>
-                        <a href="#">Contact</a>
-                    </li>
                 </ul>
             </nav>
             <div id="mobile-menu-wrap"></div>
@@ -248,9 +245,6 @@
                                 </li>
                                 <li {% if section == 'blog' or section == 'blog_detail' %}class="active"{% endif %}>
                                     <a href="{% url "blog:post_list" %}">Blog</a>
-                                </li>
-                                <li {% if section == 'contact' %}class="active"{% endif %}>
-                                    <a href="#">Contact</a>
                                 </li>
                             </ul>
                         </nav>
