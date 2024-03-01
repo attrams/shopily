@@ -16,3 +16,9 @@ class LoginForm(forms.Form):
 
 class PasswordResetRequestForm(forms.Form):
     email = forms.EmailField()
+
+
+class UserEditForm(forms.ModelForm):
+    class Meta:
+        model = get_user_model()
+        fields = ('first_name', 'last_name', 'email', 'username')

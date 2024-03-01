@@ -15,5 +15,6 @@ urlpatterns = [
         view=views.password_reset,
         name='password_reset'
     ),
-    path('change-password/', views.change_password, name='change_password')
+    path('change-password/', views.change_password, name='change_password'),
+    path('edit_account/', views.edit_account, name='edit_account'),
 ]

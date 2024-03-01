@@ -11,7 +11,7 @@ from django.contrib import messages
 from django.contrib.auth.forms import SetPasswordForm, PasswordChangeForm
 from django.contrib.auth.decorators import login_required
 
-from .forms import SignUpForm, LoginForm, PasswordResetRequestForm
+from .forms import SignUpForm, LoginForm, PasswordResetRequestForm, UserEditForm
 from .tasks import send_confirmation_email, send_password_reset
 
 # Create your views here.
@@ -287,3 +287,25 @@ def change_password(request):
         template_name='accounts/change_password.html',
         context={'form': form}
     )
+
+
+@login_required
+def edit_account(request):
+    if request.method == 'POST':
+        form = UserEditForm(data=request.POST, instance=request.user)
+
+        if form.is_valid():
+            form.save()
+
+            return redirect('shop:index')
+
+        else:
+            messages.error(
+                request=request,
+                message='Please fix the errors below'
+            )
+
+    else:
+        form = UserEditForm(instance=request.user)
+
+    return render(request, 'accounts/edit_account.html', {'form': form})

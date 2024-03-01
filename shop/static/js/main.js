@@ -263,7 +263,7 @@ $(document).ready(function () {
    --------------------------------------------------------- */
 
     $(
-      '#user-login-form input, #user-signup-form input, #forgot-password-form input, #set-new-password-form input'
+      '#user-login-form input, #user-signup-form input, #forgot-password-form input, #set-new-password-form input, #edit-account-form input'
     ).on('input', function () {
       // Find the closest parent container (e.g., '.form-group') and search for the '.error' within it and hide
       $(this).closest('.form-group').find('.error').hide();

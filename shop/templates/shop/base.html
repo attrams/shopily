@@ -115,11 +115,11 @@
                                 <i class="fa fa-user"></i> {{ request.user.username }}
                             </span>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="">Edit Account</a>
+                                <a class="dropdown-item" href="{% url "accounts:edit_account" %}">Edit Account</a>
                                 <a class="dropdown-item" href="{% url "accounts:change_password" %}">Change Password</a>
                                 <a class="dropdown-item" href="{% url "accounts:forgot_password" %}">Reset Password</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item logoutFormLink" href="#">Logout</a>
+                                <a class="dropdown-item logoutFormLink" href="">Logout</a>
                             </div>
                         </div>
                         <form class="logoutForm d-none"
@@ -207,7 +207,7 @@
                                                 <i class="fa fa-user"></i> {{ request.user.username }}
                                             </span>
                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="">Edit Account</a>
+                                                <a class="dropdown-item" href="{% url "accounts:edit_account" %}">Edit Account</a>
                                                 <a class="dropdown-item" href="{% url "accounts:change_password" %}">Change Password</a>
                                                 <a class="dropdown-item" href="{% url "accounts:forgot_password" %}">Reset Password</a>
                                                 <div class="dropdown-divider"></div>
