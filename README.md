@@ -23,3 +23,7 @@ This e-commerce platform is a full-featured web application that allows users to
 - [easy-thumbnails](https://github.com/SmileyChris/easy-thumbnails) - for rendering thumbnails.
 - [django-taggit](https://github.com/jazzband/django-taggit) - for working with blog tags.
 - [psycopg2-binary](https://pypi.org/project/psycopg2-binary/) - PostgreSQL adapter.
+- [django-extensions](https://github.com/django-extensions/django-extensions) - this extension also includes the installation of:
+  - [werkzeug](https://pypi.org/project/Werkzeug/) - which is required by RunServerPlus extension of Django extensions.
+  - [pyOpenSSL](https://pypi.org/project/pyOpenSSL/) - which is required to use SSL/TLS functionality of RunServerPlus.
+- [django-allauth](https://docs.allauth.org/en/latest/introduction/index.html) - for social authentication(login with google).
