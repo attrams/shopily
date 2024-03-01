@@ -30,7 +30,9 @@ SECRET_KEY = 'django-insecure-i*k*&@*t4%&ur%j7ryw*m%ftw+wie&k08cbfq=8!6117yq7r2)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'shopily.com', 'localhost', '127.0.0.1'
+]
 
 
 # Application definition
@@ -56,6 +58,11 @@ INSTALLED_APPS = [
     'easy_thumbnails',
     'taggit',
     'django.contrib.postgres',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.google',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -66,6 +73,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'shopily.urls'
@@ -178,4 +186,27 @@ AUTH_USER_MODEL = "accounts.User"
 AUTHENTICATION_BACKENDS = [
     'accounts.authentication.EmailOrUsernameAuthBackend',
     'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
 ]
+
+# google auth settings
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        'APP': {
+            'client_id': os.getenv('GOOGLE_CLIENT_ID'),
+            'secret': os.getenv('GOOGLE_SECRET'),
+            'key': os.getenv('GOOGLE_KEY'),
+        },
+        'SCOPE': {
+            'profile', 'email'
+        }
+    }
+}
+
+SITE_ID = 1
+
+LOGIN_REDIRECT_URL = 'shop:index'
+
+LOGOUT_REDIRECT_URL = 'shop:index'
+
+ACCOUNT_EMAIL_REQUIRED = True
