@@ -27,3 +27,6 @@ This e-commerce platform is a full-featured web application that allows users to
   - [werkzeug](https://pypi.org/project/Werkzeug/) - which is required by RunServerPlus extension of Django extensions.
   - [pyOpenSSL](https://pypi.org/project/pyOpenSSL/) - which is required to use SSL/TLS functionality of RunServerPlus.
 - [django-allauth](https://docs.allauth.org/en/latest/introduction/index.html) - for social authentication(login with google).
+- [django-rosetta](https://django-rosetta.readthedocs.io/) - interface for translations.
+- [django-parler](https://django-parler.readthedocs.io/en/stable/) - for translating models.
+- [django-localflavor](https://django-localflavor.readthedocs.io/en/latest/) - for country specific localization format.
