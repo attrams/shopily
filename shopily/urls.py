@@ -18,16 +18,27 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.conf.urls.i18n import i18n_patterns
 
-urlpatterns = [
+from payment import webhooks
+
+from django.utils.translation import gettext_lazy as _
+
+urlpatterns = i18n_patterns(
     path('admin/', admin.site.urls),
-    path(route='cart/', view=include('cart.urls', namespace='cart')),
-    path(route='orders/', view=include('orders.urls', namespace='orders')),
-    path(route='payment/', view=include('payment.urls', namespace='payment')),
-    path(route='coupons/', view=include('coupons.urls', namespace='coupons')),
-    path(route='blog/', view=include('blog.urls', namespace='blog')),
-    path(route='accounts/', view=include('accounts.urls', namespace='accounts')),
+    path(route=_('cart/'), view=include('cart.urls', namespace='cart')),
+    path(route=_('orders/'), view=include('orders.urls', namespace='orders')),
+    path(route=_('payment/'), view=include('payment.urls', namespace='payment')),
+    path(route=_('coupons/'), view=include('coupons.urls', namespace='coupons')),
+    path(route=_('blog/'), view=include('blog.urls', namespace='blog')),
+    path(route=_('accounts/'), view=include('accounts.urls', namespace='accounts')),
+    path(route='rosetta/', view=include('rosetta.urls')),
     path(route='', view=include('shop.urls', namespace='shop')),
+)
+
+urlpatterns += [
+    path('payment/webhook/', webhooks.stripe_webhook, name='stripe-webhook'),
+
 ]
 
 if settings.DEBUG:
