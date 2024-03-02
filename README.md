@@ -1,6 +1,6 @@
 # shopily
 
-This e-commerce platform is a full-featured web application that allows users to browse products, add them to their cart, and make purchases. In addition to these standard e-commerce capabilities, our platform includes a blog section where we publish articles, guides, and news about our products and related topics. This integration aims to enrich the customer's shopping experience, offering them a one-stop solution for both their shopping needs and their quest for information.
+This e-commerce platform is a web application that allows users to browse products, add them to their cart, and make purchases. In addition to these standard e-commerce capabilities, this webapp includes a blog section with articles, guides, and news about our products and related topics.
 
 ## Features
 
@@ -30,3 +30,68 @@ This e-commerce platform is a full-featured web application that allows users to
 - [django-rosetta](https://django-rosetta.readthedocs.io/) - interface for translations.
 - [django-parler](https://django-parler.readthedocs.io/en/stable/) - for translating models.
 - [django-localflavor](https://django-localflavor.readthedocs.io/en/latest/) - for country specific localization format.
+
+## Note
+
+In case you want to try out or clone this project, you need to carry out the steps below. You can simply use the docker image if you want to skip the steps below.
+
+- Run the `requirements.txt` file to install the packages. you can run this file using the command `pip install -r requirements.txt` if you are not using a [virtual environment](https://docs.python.org/3/library/venv.html) or `python -m pip install -r requirements.txt` if you are using one.
+
+- This project uses [postgresql](https://www.postgresql.org/) so you need to install postgresql if you haven't already installed it.
+
+- [redis](https://redis.io/) is also required since it is used to store recommended products.
+
+- Remember to run the migrations. This can be done by using the command `python manage.py migrate`.
+
+- [Celery](https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html) requires a [message broker](https://en.wikipedia.org/wiki/Message_broker). You can check this part of the [documentation](https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html#choosing-a-broker) on how to install and run it.
+
+- Add `.env` file at the root of the project. The root of the project is the folder that contains files like `manage.py`, `.gitignore` and etc.
+
+  - Add the stripe configuration.
+
+    - `STRIPE_PUBLISHABLE_KEY`=`"your stripe publishable key"`
+    - `STRIPE_SECRET_KEY`=`"your stripe secret key"`
+    - `STRIPE_API_VERSION`=`"your api version"`
+    - `STRIPE_WEBHOOK_SECRET`=`"your webhook secret"`
+
+    To get the above values, you can follow the steps below:
+
+    1.  Visit [stripe](https://dashboard.stripe.com/login).
+    2.  Create an app. This can be located at the left top corner.
+    3.  Access the [developers](https://dashboard.stripe.com/test/developers) page.
+    4.  You can find the api version on this page.
+    5.  Checkout the [API keys](https://dashboard.stripe.com/test/apikeys) tab for api keys.
+    6.  Visit [webhooks](https://dashboard.stripe.com/test/webhooks/create?endpoint_location=local) for the stripe webhook secret.
+
+    After getting these values set each variable in the `.env` file.
+
+  - Along with the stripe configurations, you also need these:
+
+    These for redis configuration.
+
+    - `REDIS_HOST`= `"your redis host"`
+    - `REDIS_PORT`= `"your redis port"`
+    - `REDIS_DB`= `"your redis DB name"`
+
+    These for DB configuration(postgres)
+
+    - `DB_NAME`= `"your postgres database name"`
+    - `DB_USERNAME`= `"your postgres database username"`
+    - `DB_PASSWORD`= `"your postgres database password"`
+    - `DB_HOST`= `"your postgres host"`
+    - `DB_PORT`= `"your postgres port"`
+
+    In case you want to check out social authentication with google, switch to the `social-auth` branch. These configurations will be needed for the google social authentication to work.
+
+    - `GOOGLE_CLIENT_ID` = `"your google client id"`
+    - `GOOGLE_SECRET` = `"your google secret"`
+    - `GOOGLE_KEY` = `"your google key"`
+
+    You can check these pages on how to get them.
+
+    - [How to get Google Client ID and Client Secret?](https://www.balbooa.com/help/gridbox-documentation/integrations/other/google-client-id)
+    - [Setting up OAuth 2.0](https://support.google.com/cloud/answer/6158849?hl=en)
+
+- With your message broker running, Run [celery](https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html) with the command `celery -A myshop worker -l info`. You also have to run the [stripe webhook](https://dashboard.stripe.com/test/webhooks/create?endpoint_location=local) for the stripe webhook to automatically update order status. This can be done using the command `stripe listen --forward-to [your webhook path]`. For this project, the stripe webhooks will be forwarded to `localhost:8000/payment/webhook/` that is `stripe listen --forward-to localhost:8000/payment/webhook/`. Then you can run the django project. So in all four things must be running, your chosen message broker, [celery](https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html), [stripe webhook](https://dashboard.stripe.com/test/webhooks/create?endpoint_location=local) and the django project.
+
+- You can check this page on stripe for [test cards](https://stripe.com/docs/testing) when you get to the payment page.
