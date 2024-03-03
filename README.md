@@ -33,7 +33,7 @@ This e-commerce platform is a web application that allows users to browse produc
 
 ## Note
 
-In case you want to try out or clone this project, you need to carry out the steps below. You can simply use the docker image if you want to skip the steps below.
+In case you want to try out or clone this project, you need to carry out the steps below.
 
 - Run the `requirements.txt` file to install the packages. you can run this file using the command `pip install -r requirements.txt` if you are not using a [virtual environment](https://docs.python.org/3/library/venv.html) or `python -m pip install -r requirements.txt` if you are using one.
 
